@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=MuseoModerno:700|Mukta%20Vaani:400');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #010E0D;
+    font-family: 'Mukta Vaani';
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/** Farver **/
+/*
+Tekst - #D8FDF6
+Baggrund - #010E0D
+Primær - #7DC1E8
+Sekundær - #750B51
+Accent - #7FA810
+
+Rød - #460731 + 85 (opacity 54%)
+Blå - #081E2B + 85 (opacity 54%)
+Grøn -  + 85 (opacity 54%)
+
+Border - #033028
+
+Gradients:
+min - #7FA810 + #7DC1E8
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'MuseoModerno';
+    font-weight: 700;
+    color: #D8FDF6;
+}
+
+h1 {
+    font-size: calc(60px + 0.390625vw);
+}
+
+h2 {
+    font-size: calc(50.56px + 0.390625vw);
+}
+
+h3 {
+    font-size: calc(37.92px + 0.390625vw);
+}
+
+h4 {
+    font-size: calc(28.48px + 0.390625vw);
+}
+
+h5 {
+    font-size: calc(13px + 0.390625vw);
+}
+
+p,
+a,
+button {
+    font-size: calc(13px + 0.390625vw);
+    color: #D8FDF6;
+}
+
+/**************************************************************************/
+/***** header *****/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #010e0dcc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 15;
+}
+
+header img {
+    position: relative;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    width: 6%;
+    background-color: #010e0d;
+    z-index: 5;
+}
+
+nav {
+    width: 30%;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    /* Start med ingen bredde for understregning */
+    width: 0;
+    height: 2px;
+    /* Gradientfarve for understregning */
+    background-image: linear-gradient(to right, #750B51, #7DC1E8, #7FA810);
+    /* Tilføj en overgangseffekt */
+    transition: width 0.7s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+    /* Udvid understregningen til fuld bredde ved hover eller aktiv tilstand */
+    width: 100%;
+}
+
+header::after {
+    content: '';
+    /* Indholdet af pseudoelementet (i dette tilfælde, det er en border) */
+    position: absolute;
+    /* Positioner det absolut i forhold til headeren */
+    bottom: 0;
+    /* Placer det i bunden af headeren */
+    left: 3%;
+    /* Juster venstre position til at begynde fra 10% af headerens bredde */
+    width: 94%;
+    /* Bredden af pseudoelementet, 80% af headerens bredde */
+    border-bottom: 2px solid #033028;
+}
+
+/**************************************************************************/
+
+/******************************/
+/** INDSÆT BURGER **/
+/******************************/
+
+/**************************************************************************/
+/***** footer *****/
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    height: 7.5vh;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+footer div img {
+    margin-right: 5px;
+    height: 2.5vh;
+}
+
+#foot_logo {
+    height: 6vh;
+    margin-top: 1vh;
+}
+
+footer::before { /* <-- border */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 3%;
+    width: 94%;
+    border-top: 2px solid #033028;
+}

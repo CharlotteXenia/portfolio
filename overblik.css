@@ -1,0 +1,202 @@
+@media(max-width:1000px) {
+    /* header */
+    header {
+        height: 8vh;
+    }
+
+    nav {
+        width: 40%;
+        margin-right: 4vw;
+    }
+
+    header img {
+        margin-top: 7.5vh;
+        margin-left: 4.8vw;
+    }
+
+    /* overskrift */
+    #heading {
+        width: 90%;
+        margin-bottom: 2vh;
+    }
+
+    #heading p {
+        margin-top: -4vh;
+        margin-left: -48vw;
+    }
+
+    /* hvem er jeg */
+    #whoami {
+        margin-bottom: 10vh;
+    }
+
+    #whoami h2 {
+        margin-bottom: 1vh;
+    }
+
+    #whoami section {
+        width: 80%;
+    }
+
+    #whoami section:first-child div {
+        margin-bottom: 10vh;
+    }
+
+    #whoami section:first-child img {
+        width: 40%;
+        border-radius: 0px 0px 0px 17px;
+    }
+
+    /* funfacts */
+    #whoami section:last-child {
+        width: 80%;
+    }
+
+    #whoami section:last-child div div {
+        height: 30vh;
+    }
+
+    #whoami section:last-child div img {
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+    }
+
+    /* portfolio */
+    #pfcont div {
+        width: 80%;
+
+    }
+
+    #pfcont div section {
+        height: 45vh;
+        margin-bottom: 10vh;
+    }
+
+    #pfcont h3 {
+        font-size: calc(30.92px + 0.390625vw);
+    }
+
+    #pfcont img {
+        height: 15vh;
+    }
+
+    /* modal */
+    .modCont {
+        width: 80%;
+        margin-top: -620vh;
+    }
+
+    .modCont p {
+        width: 45%;
+        line-height: 2.5vh;
+    }
+
+    /* værktøjer */
+    #tools div {
+        width: 80%;
+        flex-wrap: wrap;
+        margin-bottom: 10vh;
+    }
+
+    #tools div section {
+        width: 48%;
+        height: 50vh;
+        margin-bottom: 2vh;
+    }
+
+    /* programmer */
+    #programs {
+        margin-bottom: 10vh;
+    }
+
+    #programs div {
+        width: 79.6%;
+    }
+
+    #programs section {
+        width: 78.5%;
+    }
+
+    #programs div section {
+        margin-bottom: 1.5vh;
+    }
+
+    /* cv */
+    #curriculum {
+        margin-bottom: 10vh;
+    }
+
+    /* kontakt */
+    #contact {
+        margin-bottom: 10vh;
+    }
+
+    #contact p {
+        width: 100%;
+    }
+
+    #contEmail {
+        margin-top: -2.5vh;
+    }
+
+    #contact img {
+        height: 2vh;
+        margin-right: 2vh;
+        margin-top: 0.7vh;
+    }
+
+    /* kontaktinformationer */
+    #contact div div div {
+        margin-bottom: 2vh;
+    }
+
+    /* kontaktformular */
+    input {
+        height: 3.5vh;
+    }
+
+    button {
+        padding-top: 0;
+        font-size: calc(10px + 0.390625vw);
+    }
+
+    /* linje */
+    #twirl {
+        margin-top: 40vh;
+        margin-left: -23vw;
+        width: 26vw;
+    }
+
+    /* udtalelser */
+    #others div {
+        width: 80%;
+        flex-wrap: wrap;
+        margin-bottom: 5vh;
+    }
+
+    #others div section {
+        width: 48%;
+        height: 55vh;
+        margin-bottom: 2vh;
+        line-height: 2.5vh;
+    }
+
+    #others h2 {
+        margin-bottom: 40px;
+    }
+
+    #others h5 {
+        font-size: calc(15px + 0.390625vw);
+        margin-bottom: 1vh;
+    }
+
+    #others p {
+        font-size: 16px;
+    }
+
+    .proff {
+        font-size: 1.5vw !important;
+        margin-top: -0.5vh;
+        margin-bottom: 1vh;
+    }
+}

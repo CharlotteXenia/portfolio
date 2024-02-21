@@ -1,0 +1,135 @@
+@media(max-width:767px) {
+
+    /* header */
+    header {
+        height: 5vh;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header img {
+        display: none;
+    }
+
+    /* overskrift */
+    #heading {
+        margin-top: 8vh;
+        margin-bottom: 1vh;
+    }
+
+    #heading p {
+        transform: rotate(0);
+        margin-left: 0;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    /* hvem er jeg */
+    /* tekstombrydning - hvordan?????? */
+    /* #whoamiCont {
+        margin: 3em 8em;
+    }
+
+    #textWrap {
+        float: left;
+        margin-left: 1.5em;
+    }
+
+    #whoamiCont p {
+        margin-bottom: 2.5em;
+        overflow: visible;
+    }
+     */
+    #whoami section {
+        width: 90%;
+    }
+
+    #whoami section:first-child div {
+        flex-direction: column;
+    }
+
+    #whoami section:first-child img {
+        width: 80%;
+        margin-bottom: 1vh;
+    }
+
+    #whoami section:first-child p {
+        margin-left: 0;
+    }
+
+
+
+    /* cv */
+    .timeline {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .respAlign {
+        justify-content: left;
+        text-align: left;
+        margin-bottom: 5vh;
+    }
+
+    .timeline:before {
+        left: 20px;
+        height: 100%;
+    }
+
+    .timeline ul li:nth-child(odd),
+    .timeline ul li:nth-child(even) {
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    .timeline ul li:nth-child(odd):before,
+    .timeline ul li:nth-child(even):before {
+        top: -18px;
+        left: 16px;
+    }
+
+    .timeline ul li:nth-child(odd) .time,
+    .timeline ul li:nth-child(even) .time {
+        top: -30px;
+        left: 50px;
+        right: inherit;
+    }
+
+    /* timeline2 */
+    .timeline2 {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .timeline2:before {
+        left: 20px;
+        height: 100%;
+    }
+
+    .timeline2 ul li:nth-child(odd),
+    .timeline2 ul li:nth-child(even) {
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    .timeline2 ul li:nth-child(odd):before,
+    .timeline2 ul li:nth-child(even):before {
+        top: -18px;
+        left: 16px;
+    }
+
+    .timeline2 ul li:nth-child(odd) .time,
+    .timeline2 ul li:nth-child(even) .time {
+        top: -30px;
+        left: 50px;
+        right: inherit;
+    }
+}
