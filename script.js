@@ -13,7 +13,7 @@ function updateUnderlineOnScroll() {
         const offsetAttribute = section.getAttribute('data-offset');
         const offset = offsetAttribute ? parseInt(offsetAttribute) : 0; // Brug individuel offset, hvis den er defineret
         const sectionTop = section.offsetTop - navHeight - offset;
-        
+
         if (scrollPosition >= sectionTop) {
             activeLink = document.querySelector('nav a[href="#' + sectionId + '"]');
             break;
@@ -54,7 +54,7 @@ window.addEventListener('scroll', updateUnderlineOnScroll);
 
 // Lyt efter klikbegivenheder på links og rul til den tilsvarende sektion
 document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function(event) {
+    link.addEventListener('click', function (event) {
         event.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
         scrollToSection(targetId);
@@ -102,10 +102,10 @@ webMod.addEventListener("click", function () {
 });
 
 webArrowLeft.addEventListener("click", function () {
-    if (projectSide == 1) {  
+    if (projectSide == 1) {
         projectSide = 3
     } else {
-        projectSide = projectSide -1
+        projectSide = projectSide - 1
     }
     if (projectSide == 1) {
         proj1.style.display = "block"
@@ -125,7 +125,7 @@ webArrowLeft.addEventListener("click", function () {
 })
 
 webArrowRight.addEventListener("click", function () {
-    if (projectSide == 3) {  
+    if (projectSide == 3) {
         projectSide = 1
     } else {
         projectSide = projectSide + 1
@@ -157,10 +157,10 @@ logoMod.addEventListener("click", function () {
 });
 
 logoArrowLeft.addEventListener("click", function () {
-    if (projectSide == 1) {  
+    if (projectSide == 1) {
         projectSide = 3
     } else {
-        projectSide = projectSide -1
+        projectSide = projectSide - 1
     }
     if (projectSide == 1) {
         logo1.style.display = "block"
@@ -180,7 +180,7 @@ logoArrowLeft.addEventListener("click", function () {
 })
 
 logoArrowRight.addEventListener("click", function () {
-    if (projectSide == 3) {  
+    if (projectSide == 3) {
         projectSide = 1
     } else {
         projectSide = projectSide + 1
@@ -212,10 +212,10 @@ illuMod.addEventListener("click", function () {
 });
 
 illuArrowLeft.addEventListener("click", function () {
-    if (projectSide == 1) {  
+    if (projectSide == 1) {
         projectSide = 3
     } else {
-        projectSide = projectSide -1
+        projectSide = projectSide - 1
     }
     if (projectSide == 1) {
         illu1.style.display = "block"
@@ -235,7 +235,7 @@ illuArrowLeft.addEventListener("click", function () {
 })
 
 illuArrowRight.addEventListener("click", function () {
-    if (projectSide == 3) {  
+    if (projectSide == 3) {
         projectSide = 1
     } else {
         projectSide = projectSide + 1
@@ -258,19 +258,317 @@ illuArrowRight.addEventListener("click", function () {
 })
 
 /*************************************************************/
-/***** burger *****/
-// function myFunction(x) {
-//     x.classList.toggle("change");
+/***** mockup slide *****/
+//projekt1
+const proj1Prik1 = document.getElementById("proj1Prik1");
+const proj1Prik2 = document.getElementById("proj1Prik2");
 
-//   }
+const proj1Mock1 = document.getElementById("proj1Mock1");
+const proj1Mock2 = document.getElementById("proj1Mock2");
 
-//   /* Open */
-// function openNav() {
-//     document.getElementById("myNav").style.height = "100%";
-//   }
-  
-//   /* Close */
-//   function closeNav() {
-//     document.getElementById("myNav").style.height = "0%";
-//   }
-  
+//ARRAY rød
+let mockWeb1 = [proj1Mock1, proj1Mock2];
+let prikkerWeb1 = [proj1Prik1, proj1Prik2];
+
+proj1Mock1.style.display = "block";
+proj1Prik1.classList.add("activePrik");
+console.log("variablerne er lavet");
+
+proj1Prik1.addEventListener("click", function () {
+    for (let index = 0; index < mockWeb1.length; index++) {
+        mockWeb1[index].style.display = "none";
+        prikkerWeb1[index].classList.remove("activePrik");
+    }
+
+    proj1Mock1.style.display = "block";
+    proj1Prik1.classList.add("activePrik");
+});
+
+proj1Prik2.addEventListener("click", function () {
+    for (let index = 0; index < mockWeb1.length; index++) {
+        mockWeb1[index].style.display = "none";
+        prikkerWeb1[index].classList.remove("activePrik");
+    }
+
+    proj1Mock2.style.display = "block";
+    proj1Prik2.classList.add("activePrik");
+});
+
+/*********************************************/
+//projekt2
+const proj2Prik1 = document.getElementById("proj2Prik1");
+const proj2Prik2 = document.getElementById("proj2Prik2");
+
+const proj2Mock1 = document.getElementById("proj2Mock1");
+const proj2Mock2 = document.getElementById("proj2Mock2");
+
+//ARRAY rød
+let mockweb2 = [proj2Mock1, proj2Mock2];
+let prikkerWeb2 = [proj2Prik1, proj2Prik2];
+
+proj2Mock1.style.display = "block";
+proj2Prik1.classList.add("activePrik");
+
+proj2Prik1.addEventListener("click", function () {
+    for (let index = 0; index < mockweb2.length; index++) {
+        mockweb2[index].style.display = "none";
+        prikkerWeb2[index].classList.remove("activePrik");
+    }
+
+    proj2Mock1.style.display = "block";
+    proj2Prik1.classList.add("activePrik");
+});
+
+proj2Prik2.addEventListener("click", function () {
+    for (let index = 0; index < mockweb2.length; index++) {
+        mockweb2[index].style.display = "none";
+        prikkerWeb2[index].classList.remove("activePrik");
+    }
+
+    proj2Mock2.style.display = "block";
+    proj2Prik2.classList.add("activePrik");
+});
+
+/*********************************************/
+//projekt3
+const proj3Prik1 = document.getElementById("proj3Prik1");
+const proj3Prik2 = document.getElementById("proj3Prik2");
+
+const proj3Mock1 = document.getElementById("proj3Mock1");
+const proj3Mock2 = document.getElementById("proj3Mock2");
+
+//ARRAY rød
+let mockWeb3 = [proj3Mock1, proj3Mock2];
+let prikkerWeb3 = [proj3Prik1, proj3Prik2];
+
+proj3Mock1.style.display = "block";
+proj3Prik1.classList.add("activePrik");
+
+proj3Prik1.addEventListener("click", function () {
+    for (let index = 0; index < mockWeb3.length; index++) {
+        mockWeb3[index].style.display = "none";
+        prikkerWeb3[index].classList.remove("activePrik");
+    }
+
+    proj3Mock1.style.display = "block";
+    proj3Prik1.classList.add("activePrik");
+});
+
+proj3Prik2.addEventListener("click", function () {
+    for (let index = 0; index < mockWeb3.length; index++) {
+        mockWeb3[index].style.display = "none";
+        prikkerWeb3[index].classList.remove("activePrik");
+    }
+
+    proj3Mock2.style.display = "block";
+    proj3Prik2.classList.add("activePrik");
+});
+
+/*********************************************/
+//proces1
+const logo1Proc1 = document.getElementById('logo1Proc1');
+const logo1Proc2 = document.getElementById('logo1Proc2');
+const logo1Proc3 = document.getElementById('logo1Proc3');
+const logo1Proc4 = document.getElementById('logo1Proc4');
+const logo1Proc5 = document.getElementById('logo1Proc5');
+
+const logo1Prik1 = document.getElementById('logo1Prik1');
+const logo1Prik2 = document.getElementById('logo1Prik2');
+const logo1Prik3 = document.getElementById('logo1Prik3');
+const logo1Prik4 = document.getElementById('logo1Prik4');
+const logo1Prik5 = document.getElementById('logo1Prik5');
+
+let logoProces1 = [logo1Proc1, logo1Proc2, logo1Proc3, logo1Proc4, logo1Proc5];
+let prikkerLogo1 = [logo1Prik1, logo1Prik2, logo1Prik3, logo1Prik4, logo1Prik5];
+
+logo1Proc1.style.display = "block";
+logo1Prik1.classList.add("activePrik");
+
+logo1Prik1.addEventListener("click", function () {
+    for (let index = 0; index < logoProces1.length; index++) {
+        logoProces1[index].style.display = "none";
+        prikkerLogo1[index].classList.remove("activePrik");
+    }
+
+    logo1Proc1.style.display = "block";
+    logo1Prik1.classList.add("activePrik");
+})
+
+logo1Prik2.addEventListener("click", function () {
+    for (let index = 0; index < logoProces1.length; index++) {
+        logoProces1[index].style.display = "none";
+        prikkerLogo1[index].classList.remove("activePrik");
+    }
+
+    logo1Proc2.style.display = "block";
+    logo1Prik2.classList.add("activePrik");
+})
+
+logo1Prik3.addEventListener("click", function () {
+    for (let index = 0; index < logoProces1.length; index++) {
+        logoProces1[index].style.display = "none";
+        prikkerLogo1[index].classList.remove("activePrik");
+    }
+
+    logo1Proc3.style.display = "block";
+    logo1Prik3.classList.add("activePrik");
+})
+
+logo1Prik4.addEventListener("click", function () {
+    for (let index = 0; index < logoProces1.length; index++) {
+        logoProces1[index].style.display = "none";
+        prikkerLogo1[index].classList.remove("activePrik");
+    }
+
+    logo1Proc4.style.display = "block";
+    logo1Prik4.classList.add("activePrik");
+})
+
+logo1Prik5.addEventListener("click", function () {
+    for (let index = 0; index < logoProces1.length; index++) {
+        logoProces1[index].style.display = "none";
+        prikkerLogo1[index].classList.remove("activePrik");
+    }
+
+    logo1Proc5.style.display = "block";
+    logo1Prik5.classList.add("activePrik");
+})
+
+//proces2
+const logo2Proc1 = document.getElementById('logo2Proc1');
+const logo2Proc2 = document.getElementById('logo2Proc2');
+const logo2Proc3 = document.getElementById('logo2Proc3');
+const logo2Proc4 = document.getElementById('logo2Proc4');
+const logo2Proc5 = document.getElementById('logo2Proc5');
+
+const logo2Prik1 = document.getElementById('logo2Prik1');
+const logo2Prik2 = document.getElementById('logo2Prik2');
+const logo2Prik3 = document.getElementById('logo2Prik3');
+const logo2Prik4 = document.getElementById('logo2Prik4');
+const logo2Prik5 = document.getElementById('logo2Prik5');
+
+let logoProces2 = [logo2Proc1, logo2Proc2, logo2Proc3, logo2Proc4, logo2Proc5];
+let prikkerlogo2 = [logo2Prik1, logo2Prik2, logo2Prik3, logo2Prik4, logo2Prik5];
+
+logo2Proc1.style.display = "block";
+logo2Prik1.classList.add("activePrik");
+
+logo2Prik1.addEventListener("click", function () {
+    for (let index = 0; index < logoProces2.length; index++) {
+        logoProces2[index].style.display = "none";
+        prikkerlogo2[index].classList.remove("activePrik");
+    }
+
+    logo2Proc1.style.display = "block";
+    logo2Prik1.classList.add("activePrik");
+})
+
+logo2Prik2.addEventListener("click", function () {
+    for (let index = 0; index < logoProces2.length; index++) {
+        logoProces2[index].style.display = "none";
+        prikkerlogo2[index].classList.remove("activePrik");
+    }
+
+    logo2Proc2.style.display = "block";
+    logo2Prik2.classList.add("activePrik");
+})
+
+logo2Prik3.addEventListener("click", function () {
+    for (let index = 0; index < logoProces2.length; index++) {
+        logoProces2[index].style.display = "none";
+        prikkerlogo2[index].classList.remove("activePrik");
+    }
+
+    logo2Proc3.style.display = "block";
+    logo2Prik3.classList.add("activePrik");
+})
+
+logo2Prik4.addEventListener("click", function () {
+    for (let index = 0; index < logoProces2.length; index++) {
+        logoProces2[index].style.display = "none";
+        prikkerlogo2[index].classList.remove("activePrik");
+    }
+
+    logo2Proc4.style.display = "block";
+    logo2Prik4.classList.add("activePrik");
+})
+
+logo2Prik5.addEventListener("click", function () {
+    for (let index = 0; index < logoProces2.length; index++) {
+        logoProces2[index].style.display = "none";
+        prikkerlogo2[index].classList.remove("activePrik");
+    }
+
+    logo2Proc5.style.display = "block";
+    logo2Prik5.classList.add("activePrik");
+})
+
+//proces3
+const logo3Proc1 = document.getElementById('logo3Proc1');
+const logo3Proc2 = document.getElementById('logo3Proc2');
+const logo3Proc3 = document.getElementById('logo3Proc3');
+const logo3Proc4 = document.getElementById('logo3Proc4');
+const logo3Proc5 = document.getElementById('logo3Proc5');
+
+const logo3Prik1 = document.getElementById('logo3Prik1');
+const logo3Prik2 = document.getElementById('logo3Prik2');
+const logo3Prik3 = document.getElementById('logo3Prik3');
+const logo3Prik4 = document.getElementById('logo3Prik4');
+const logo3Prik5 = document.getElementById('logo3Prik5');
+
+let logoProces3 = [logo3Proc1, logo3Proc2, logo3Proc3, logo3Proc4, logo3Proc5];
+let prikkerlogo3 = [logo3Prik1, logo3Prik2, logo3Prik3, logo3Prik4, logo3Prik5];
+
+logo3Proc1.style.display = "block";
+logo3Prik1.classList.add("activePrik");
+
+logo3Prik1.addEventListener("click", function () {
+    for (let index = 0; index < logoProces3.length; index++) {
+        logoProces3[index].style.display = "none";
+        prikkerlogo3[index].classList.remove("activePrik");
+    }
+
+    logo3Proc1.style.display = "block";
+    logo3Prik1.classList.add("activePrik");
+})
+
+logo3Prik2.addEventListener("click", function () {
+    for (let index = 0; index < logoProces3.length; index++) {
+        logoProces3[index].style.display = "none";
+        prikkerlogo3[index].classList.remove("activePrik");
+    }
+
+    logo3Proc2.style.display = "block";
+    logo3Prik2.classList.add("activePrik");
+})
+
+logo3Prik3.addEventListener("click", function () {
+    for (let index = 0; index < logoProces3.length; index++) {
+        logoProces3[index].style.display = "none";
+        prikkerlogo3[index].classList.remove("activePrik");
+    }
+
+    logo3Proc3.style.display = "block";
+    logo3Prik3.classList.add("activePrik");
+})
+
+logo3Prik4.addEventListener("click", function () {
+    for (let index = 0; index < logoProces3.length; index++) {
+        logoProces3[index].style.display = "none";
+        prikkerlogo3[index].classList.remove("activePrik");
+    }
+
+    logo3Proc4.style.display = "block";
+    logo3Prik4.classList.add("activePrik");
+})
+
+logo3Prik5.addEventListener("click", function () {
+    for (let index = 0; index < logoProces3.length; index++) {
+        logoProces3[index].style.display = "none";
+        prikkerlogo3[index].classList.remove("activePrik");
+    }
+
+    logo3Proc5.style.display = "block";
+    logo3Prik5.classList.add("activePrik");
+})
+

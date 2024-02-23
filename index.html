@@ -23,6 +23,8 @@
             <a href="#contact">Kontakt</a>
         </nav>
 
+
+
         <!-- light/dark -->
     </header>
 
@@ -56,20 +58,20 @@
             <section> <!-- funfactsme -->
                 <h4>3 <span class="text_border">funfacts</span> om mig</h4>
 
-                <div>
-                    <div>
+                <div id="fun">
+                    <div id="fact">
                         <img src="media/03_thy.svg"
                             alt="Sillouet af området Thy i Nordvestjylland. Thy er et naturskønt område, som er værdsat af både indbyggere og turister.">
                         <p>Jeg er født og opvokset i Thisted og er dermed indfødt Thybo.</p>
                     </div>
 
-                    <div>
-                        <img src="media/04_lego.svg" alt="">
+                    <div id="fact">
+                        <img id="lego" src="media/04_lego.svg" alt="">
                         <p>Jeg synes, at LEGO er det fedest.</p>
                         <br>
                     </div>
 
-                    <div>
+                    <div id="fact">
                         <img src="media/05_tree.svg" alt="">
                         <p>Jeg synes, at ideen om bæredygtigt webdesign er virkelig spændende.</p>
                     </div>
@@ -114,11 +116,9 @@
                         <h2>Moesgaard Museum</h2>
 
                         <div class="projCont"> <!-- display flex -->
-                            <p>Projekttype: Gruppe
+                            <p class="projContText">Projekttype: Gruppe
                                 <br>
-                                2. semester, eksamen
-                                <br><br>
-                                Ansvar: UX
+                                2. semester - eksamen
                                 <br><br>
                                 I dette projekt skulle der udvikles en digital prototype for en selvvalgt virksomhed. I
                                 den pågældende gruppe faldt valget på Moesgaard Museums specialudstilling “Besat af
@@ -132,24 +132,26 @@
                                 fordybelse og indlevelse samt en snert af leg.
                             </p>
 
-                            <div>
-                                <img src="" alt="">
-                                <img src="" alt="">
+                            <div class="webLeft">
+                                <img class="mockDesk" id="proj1Mock1" src="media/gif/moesdesk.gif" alt="">
+                                <img id="proj1Mock2" src="media/gif/moesmob.gif" alt="">
 
-                                <div> <!-- prikker -->
-                                    <span class="prik1"></span>
-                                    <span class="prik2"></span>
+                                <div class="prikker"> <!-- prikker -->
+                                    <span class="prikstil" id="proj1Prik1"></span>
+                                    <span class="prikstil" id="proj1Prik2"></span>
                                 </div>
+                                <a class="portLink" href="">Besøg siden</a>
                             </div>
                         </div>
                     </div>
 
                     <div id="proj2"><!-- projekt2 -->
                         <h2>Oplev Thy</h2>
-                        <div>
-                            <p>Projekttype: Solo
+
+                        <div class="projCont">
+                            <p class="projContText">Projekttype: Solo
                                 <br>
-                                1. semester, eksamen
+                                1. semester - eksamen
                                 <br><br>
                                 I dette projekt var emnet “hemmelige steder du holder af”. Her skulle produceres et
                                 website med udgangspunkt i minimum tre steder, som havde personlig betydning, og det
@@ -161,35 +163,39 @@
                                 Projektet er lavet som et fundament til et projekt der muligvis skal arbejdes videre på
                                 senere med henblik på implementering af booking- og planlægningsmuligheder og systemer.
                             </p>
-                            <div>
-                                <img src="" alt="">
-                                <img src="" alt="">
-                                <div><!-- prikker -->
-                                    <span class="prik1"></span>
-                                    <span class="prik2"></span>
+
+                            <div class="webLeft">
+                                <img class="mockDesk" id="proj2Mock1" src="media/gif/oplevdesk.gif" alt="">
+                                <img class="mockPhone" id="proj2Mock2" src="media/gif/oplevmob.gif" alt="">
+
+                                <div class="prikker"><!-- prikker -->
+                                    <span class="prikstil" id="proj2Prik1"></span>
+                                    <span class="prikstil" id="proj2Prik2"></span>
                                 </div>
+                                <a class="portLink" href="">Besøg sitet!</a>
                             </div>
                         </div>
                     </div>
 
                     <div id="proj3"><!-- projekt3 -->
                         <h2>Frontsession</h2>
-                        <div>
-                            <p>Projekttype: gruppe
+
+                        <div class="projCont">
+                            <p class="projContText">Projekttype: gruppe
                                 <br>
                                 1. semester
                                 <br><br>
-                                Ansvar: Logo
-                                <br><br>
-
                             </p>
-                            <div>
-                                <img src="" alt="">
-                                <img src="" alt="">
-                                <div> <!-- prikker -->
-                                    <span class="prik1"></span>
-                                    <span class="prik2"></span>
+
+                            <div class="webLeft">
+                                <img class="mockDesk" id="proj3Mock1" src="media/gif/frontdesk.gif" alt="">
+                                <img class="mockPhone" id="proj3Mock2" src="media/gif/frontmob.gif" alt="">
+
+                                <div class="prikker"> <!-- prikker -->
+                                    <span class="prikstil" id="proj3Prik1"></span>
+                                    <span class="prikstil" id="proj3Prik2"></span>
                                 </div>
+                                <a class="portLink" href="">Besøg sitet!</a>
                             </div>
                         </div>
                     </div>
@@ -212,11 +218,9 @@
                         <h2>Portfolio</h2>
 
                         <div class="logoCont"> <!-- display flex -->
-                            <p>Projekttype: Solo
+                            <p class="logoContText">Projekttype: Solo
                                 <br>
-                                3. semester, portfolioeksamen
-                                <br><br>
-                                Ansvar: UX
+                                3. semester - portfolioeksamen
                                 <br><br>
                                 I dette projekt skulle der udvikles en digital prototype for en selvvalgt virksomhed. I
                                 den pågældende gruppe faldt valget på Moesgaard Museums specialudstilling “Besat af
@@ -230,13 +234,19 @@
                                 fordybelse og indlevelse samt en snert af leg.
                             </p>
 
-                            <div>
-                                <img src="media/24_logo_port.svg" alt="">
-                                <img src="" alt="">
+                            <div class="logoLeft">
+                                <img class="proces1" id="logo1Proc1" src="media/processer/endelig.gif" alt="">
+                                <img class="proces1" id="logo1Proc2" src="media/processer/proces1.gif" alt="">
+                                <img class="proces1" id="logo1Proc3" src="media/processer/proces2.gif" alt="">
+                                <img class="proces1" id="logo1Proc4" src="media/processer/proces4.gif" alt="">
+                                <img class="proces1" id="logo1Proc5" src="media/processer/proces5.gif" alt="">
 
-                                <div> <!-- prikker -->
-                                    <span class="prik1"></span>
-                                    <span class="prik2"></span>
+                                <div class="prikker"> <!-- prikker -->
+                                    <span class="prikstil" id="logo1Prik1"></span>
+                                    <span class="prikstil" id="logo1Prik2"></span>
+                                    <span class="prikstil" id="logo1Prik3"></span>
+                                    <span class="prikstil" id="logo1Prik4"></span>
+                                    <span class="prikstil" id="logo1Prik5"></span>
                                 </div>
                             </div>
                         </div>
@@ -244,8 +254,9 @@
 
                     <div id="logo2"><!-- projekt2 -->
                         <h2>Oplev Thy</h2>
-                        <div>
-                            <p>Projekttype: Solo
+
+                        <div class="logoCont">
+                            <p class="logoContText">Projekttype: Solo
                                 <br>
                                 1. semester, eksamen
                                 <br><br>
@@ -259,12 +270,20 @@
                                 Projektet er lavet som et fundament til et projekt der muligvis skal arbejdes videre på
                                 senere med henblik på implementering af booking- og planlægningsmuligheder og systemer.
                             </p>
-                            <div>
-                                <img src="" alt="">
-                                <img src="" alt="">
-                                <div><!-- prikker -->
-                                    <span class="prik1"></span>
-                                    <span class="prik2"></span>
+
+                            <div class="logoLeft">
+                                <img class="proces2" id="logo2Proc1" src="media/processer/thy_endelig.gif" alt="">
+                                <img class="proces2" id="logo2Proc2" src="media/processer/thy1.gif" alt="">
+                                <img class="proces2" id="logo2Proc3" src="media/processer/thy2.gif" alt="">
+                                <img class="proces2" id="logo2Proc4" src="media/processer/thy3.gif" alt="">
+                                <img class="proces2" id="logo2Proc5" src="media/processer/thy4.gif" alt="">
+
+                                <div class="prikker"><!-- prikker -->
+                                    <span class="prikstil" id="logo2Prik1"></span>
+                                    <span class="prikstil" id="logo2Prik2"></span>
+                                    <span class="prikstil" id="logo2Prik3"></span>
+                                    <span class="prikstil" id="logo2Prik4"></span>
+                                    <span class="prikstil" id="logo2Prik5"></span>
                                 </div>
                             </div>
                         </div>
@@ -272,16 +291,37 @@
 
                     <div id="logo3"><!-- projekt3 -->
                         <h2>Frontsession</h2>
-                        <div>
-                            <p>
-                                ...
+
+                        <div class="logoCont">
+                            <p class="logoContText">Projekttype: Solo
+                                <br>
+                                3. semester - portfolioeksamen
+                                <br><br>
+                                I dette projekt skulle der udvikles en digital prototype for en selvvalgt virksomhed. I
+                                den pågældende gruppe faldt valget på Moesgaard Museums specialudstilling “Besat af
+                                Livet”, en specialudstilling om den egyptiske mytologi.
+                                <br><br>
+                                I projektet var der overvejende fokus på brugen af JavaScript samt hvordan dette kunne
+                                bruges til at skabe en digital interaktiv fortælling, som ville guide den digitale
+                                bruger ud til den fysiske udstilling,
+                                <br><br>
+                                Projektet bød på mange overvejelser og endte med en prototype, som byder op til
+                                fordybelse og indlevelse samt en snert af leg.
                             </p>
-                            <div>
-                                <img src="media/24_logo_port.svg" alt="">
-                                <img src="" alt="">
-                                <div> <!-- prikker -->
-                                    <span class="prik1"></span>
-                                    <span class="prik2"></span>
+
+                            <div class="logoLeft">
+                                <img class="proces3" id="logo3Proc1" src="media/processer/front_01.gif" alt="">
+                                <img class="proces3" id="logo3Proc2" src="media/processer/front_endelig.gif" alt="">
+                                <img class="proces3" id="logo3Proc3" src="media/processer/front_02.gif" alt="">
+                                <img class="proces3" id="logo3Proc4" src="media/processer/front_03.gif" alt="">
+                                <img class="proces3" id="logo3Proc5" src="media/processer/front_04.gif" alt="">
+
+                                <div class="prikker"> <!-- prikker -->
+                                    <span class="prikstil" id="logo3Prik1"></span>
+                                    <span class="prikstil" id="logo3Prik2"></span>
+                                    <span class="prikstil" id="logo3Prik3"></span>
+                                    <span class="prikstil" id="logo3Prik4"></span>
+                                    <span class="prikstil" id="logo3Prik5"></span>
                                 </div>
                             </div>
                         </div>
@@ -302,14 +342,12 @@
 
                 <div>
                     <div id="illu1"><!-- projekt1 -->
-                        <h2>Moesgaard Museum</h2>
+                        <h2>Parallax i Figma</h2>
 
-                        <div class="logoCont"> <!-- display flex -->
-                            <p>Projekttype: Gruppe
+                        <div class="illuCont"> <!-- display flex -->
+                            <p class="illuContText">Projekttype: Gruppe
                                 <br>
                                 2. semester, eksamen
-                                <br><br>
-                                Ansvar: UX
                                 <br><br>
                                 I dette projekt skulle der udvikles en digital prototype for en selvvalgt virksomhed. I
                                 den pågældende gruppe faldt valget på Moesgaard Museums specialudstilling “Besat af
@@ -323,22 +361,18 @@
                                 fordybelse og indlevelse samt en snert af leg.
                             </p>
 
-                            <div>
-                                <img src="" alt="">
-                                <img src="" alt="">
-
-                                <div> <!-- prikker -->
-                                    <span class="prik1"></span>
-                                    <span class="prik2"></span>
-                                </div>
+                            <div class="modalLeft">
+                                <img id="illustration1" src="media/illustrationer/parallax.gif" alt="">
                             </div>
                         </div>
                     </div>
 
                     <div id="illu2"><!-- projekt2 -->
-                        <h2>Oplev Thy</h2>
-                        <div>
-                            <p>Projekttype: Solo
+                        <h2>Baggrund - Læsehjørnet</h2>
+
+
+                        <div class="illuCont">
+                            <p class="illuContText">Projekttype: Solo
                                 <br>
                                 1. semester, eksamen
                                 <br><br>
@@ -352,35 +386,28 @@
                                 Projektet er lavet som et fundament til et projekt der muligvis skal arbejdes videre på
                                 senere med henblik på implementering af booking- og planlægningsmuligheder og systemer.
                             </p>
-                            <div>
-                                <img src="" alt="">
-                                <img src="" alt="">
-                                <div><!-- prikker -->
-                                    <span class="prik1"></span>
-                                    <span class="prik2"></span>
-                                </div>
+
+                            <div class="modalLeft" id="laes">
+                                <img id="illustration2" src="media/illustrationer/baggrund4.jpg" alt="">
+
+                                <a href="https://xeniadesigns.dk/laesehjoernet/">Se den i brug her</a>
                             </div>
                         </div>
                     </div>
 
                     <div id="illu3"><!-- projekt3 -->
-                        <h2>Frontsession</h2>
-                        <div>
-                            <p>Projekttype: gruppe
+                        <h2>###</h2>
+
+                        <div class="illuCont">
+                            <p class="illuContText">Projekttype: gruppe
                                 <br>
                                 1. semester
                                 <br><br>
-                                Ansvar: Logo
-                                <br><br>
-
+                                bla bla bla
                             </p>
-                            <div>
+
+                            <div class="modalLeft">
                                 <img src="" alt="">
-                                <img src="" alt="">
-                                <div> <!-- prikker -->
-                                    <span class="prik1"></span>
-                                    <span class="prik2"></span>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -397,25 +424,33 @@
                 <section>
                     <img src="media/09_ux.svg" alt="">
                     <div class="uline"></div>
-                    <p></p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </section>
 
                 <section>
                     <img src="media/10_pen.svg" alt="">
                     <div class="uline"></div>
-                    <p></p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </section>
 
                 <section>
                     <img src="media/11_test.svg" alt="">
                     <div class="uline"></div>
-                    <p><br></p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </section>
 
                 <section>
                     <img src="media/12_prog.svg" alt="">
                     <div class="uline"></div>
-                    <p></p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </section>
             </div>
         </section>
@@ -438,7 +473,7 @@
 
             <section>
                 <img src="media/15_adobe.png" alt="">
-                <p>Adobe Photoshop & Illustrator</p>
+                <p id="ado">Adobe Photoshop & Illustrator</p>
             </section>
         </section>
 
@@ -449,20 +484,19 @@
             </div>
 
             <div>
-                <h3 class="respAlign">Uddannelse</h3>
+                <h3>Uddannelse</h3>
 
                 <div class="timeline">
                     <ul>
                         <li>
                             <div class="content">
                                 <h4>Multimediedesign</h4>
-                                <p class="time_place">Erhvervsakademi Aarhus</p>
+                                <p>Erhvervsakademi Aarhus</p>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a type specimen book. It has
-                                    survived not only five centuries, but also the leap into electronic typesetting,
-                                    remaining essentially unchanged. </p>
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
                             </div>
                             <div class="time">
                                 <h5>2023</h5>
@@ -472,13 +506,12 @@
                         <li>
                             <div class="content">
                                 <h4>Teknisk designer</h4>
-                                <p class="time_place">Aarhus TECH</p>
+                                <p>Aarhus TECH</p>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a type specimen book. It has
-                                    survived not only five centuries, but also the leap into electronic typesetting,
-                                    remaining essentially unchanged. </p>
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
                             </div>
                             <div class="time">
                                 <h5>2015</h5>
@@ -488,13 +521,12 @@
                         <li>
                             <div class="content">
                                 <h4>Industriteknikker</h4>
-                                <p class="time_place">EUC Nordvest (UCN)</p>
+                                <p>EUC Nordvest (UCN)</p>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a type specimen book. It has
-                                    survived not only five centuries, but also the leap into electronic typesetting,
-                                    remaining essentially unchanged. </p>
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
                             </div>
                             <div class="time">
                                 <h5>2014</h5>
@@ -511,13 +543,12 @@
                         <li>
                             <div class="content">
                                 <h4>Studieambassadør</h4>
-                                <p class="time_place">Erhvervsakademi Aarhus</p>
+                                <p>Erhvervsakademi Aarhus</p>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a type specimen book. It has
-                                    survived not only five centuries, but also the leap into electronic typesetting,
-                                    remaining essentially unchanged. </p>
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
                             </div>
 
                             <div class="time">
@@ -528,13 +559,12 @@
                         <li>
                             <div class="content">
                                 <h4>Tutor</h4>
-                                <p class="time_place">Erhvervsakademi Aarhus</p>
+                                <p>Erhvervsakademi Aarhus</p>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a type specimen book. It has
-                                    survived not only five centuries, but also the leap into electronic typesetting,
-                                    remaining essentially unchanged. </p>
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
                             </div>
 
                             <div class="time">
@@ -552,13 +582,12 @@
                         <li>
                             <div class="content">
                                 <h4>Multimediedesign</h4>
-                                <p class="time_place">Erhvervsakademi Aarhus</p>
+                                <p>Erhvervsakademi Aarhus</p>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a type specimen book. It has
-                                    survived not only five centuries, but also the leap into electronic typesetting,
-                                    remaining essentially unchanged. </p>
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
                             </div>
                             <div class="time">
                                 <h5>2023</h5>
@@ -575,13 +604,12 @@
                         <li>
                             <div class="content">
                                 <h4>Bestyrelsesmedlem</h4>
-                                <p class="time_place">Børnegården Rundhøj</p>
+                                <p>Børnegården Rundhøj</p>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a type specimen book. It has
-                                    survived not only five centuries, but also the leap into electronic typesetting,
-                                    remaining essentially unchanged. </p>
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
                             </div>
                             <div class="time">
                                 <h5>2023</h5>
@@ -591,13 +619,12 @@
                         <li>
                             <div class="content">
                                 <h4>Barsel</h4>
-                                <p class="time_place">Hjemme</p>
+                                <p>Hjemme</p>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a type specimen book. It has
-                                    survived not only five centuries, but also the leap into electronic typesetting,
-                                    remaining essentially unchanged. </p>
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
                             </div>
                             <div class="time">
                                 <h5>2020</h5>
@@ -615,24 +642,28 @@
 
             <div id="contact_content">
                 <div>
-                    <p>Tusind tak for din tid.
-                        <br><br>
-                        Skulle du sidde med spørgsmål eller blot have
-                        lyst til en snak, så tøv endelig ikke med at kontakte
-                        mig - jeg er altid klar på en snak!
-                        <br><br>
-                        Kontaktoplysninger:
-                    </p>
+                        <p>Tusind tak for din tid.
+                            <br><br>
+                            Skulle du sidde med spørgsmål eller blot have
+                            lyst til en snak, så tøv endelig ikke med at kontakte
+                            mig - jeg er altid klar på en snak!
+                            <br><br>
+                            Kontaktoplysninger:
+                        </p>
 
-                    <div>
-                        <img src="media/16_call.svg" alt="">
+                    <div >
+                        <img id="phone" src="media/16_call.svg" alt="">
                         <p>+45 2963 3114</p>
                     </div>
 
                     <div id="contEmail">
                         <img src="media/17_sms.svg" alt="">
                         <p>char.xenia@gmail.com
-                            <br><br>
+                        </p>
+                    </div>
+                    <br><br>
+                    <div>
+                        <p id="eller">
                             eller
                         </p>
                     </div>
@@ -640,9 +671,10 @@
 
                 <!-- kontaktform -->
                 <form>
-                    <input type="text" id="name" placeholder="Navn" required>
-                    <input type="email" id="email" placeholder="Email" required>
-                    <textarea id="message" rows="6" placeholder="Skriv din besked her..." required></textarea>
+                    <input type="text" id="name" placeholder="Navn" autocomplete="given-name" required>
+                    <input type="email" id="email" placeholder="Email" autocomplete="family-name" required>
+                    <textarea id="message" rows="6" placeholder="Skriv din besked her..." autocomplete="off"
+                        required></textarea>
                     <button type="submit">Send besked</button>
                 </form>
             </div>
@@ -681,7 +713,7 @@
                 </section>
 
                 <!-- Box_02 -->
-                <section id="others_02">
+                <section class="others_dark">
                     <img src="media/09_ux.svg" alt="">
                     <h5>Thomas Holm Andersen</h5>
                     <p class="proff">Projektleder, Aarhus Universitetshospital</p>
@@ -697,7 +729,7 @@
                 </section>
 
                 <!-- Box_04-->
-                <section id="others_04">
+                <section class="others_dark">
                     <img src="media/09_ux.svg" alt="">
                     <h5>Safa Daoudi</h5>
                     <p class="proff">Medstuderende</p>

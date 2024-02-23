@@ -1,84 +1,6 @@
 @media(max-width:1000px) {
-    /* header */
-    header {
-        height: 8vh;
-    }
 
-    nav {
-        width: 40%;
-        margin-right: 4vw;
-    }
 
-    header img {
-        margin-top: 7.5vh;
-        margin-left: 4.8vw;
-    }
-
-    /* overskrift */
-    #heading {
-        width: 90%;
-        margin-bottom: 2vh;
-    }
-
-    #heading p {
-        margin-top: -4vh;
-        margin-left: -48vw;
-    }
-
-    /* hvem er jeg */
-    #whoami {
-        margin-bottom: 10vh;
-    }
-
-    #whoami h2 {
-        margin-bottom: 1vh;
-    }
-
-    #whoami section {
-        width: 80%;
-    }
-
-    #whoami section:first-child div {
-        margin-bottom: 10vh;
-    }
-
-    #whoami section:first-child img {
-        width: 40%;
-        border-radius: 0px 0px 0px 17px;
-    }
-
-    /* funfacts */
-    #whoami section:last-child {
-        width: 80%;
-    }
-
-    #whoami section:last-child div div {
-        height: 30vh;
-    }
-
-    #whoami section:last-child div img {
-        margin-top: 3vh;
-        margin-bottom: 2vh;
-    }
-
-    /* portfolio */
-    #pfcont div {
-        width: 80%;
-
-    }
-
-    #pfcont div section {
-        height: 45vh;
-        margin-bottom: 10vh;
-    }
-
-    #pfcont h3 {
-        font-size: calc(30.92px + 0.390625vw);
-    }
-
-    #pfcont img {
-        height: 15vh;
-    }
 
     /* modal */
     .modCont {
@@ -91,18 +13,7 @@
         line-height: 2.5vh;
     }
 
-    /* værktøjer */
-    #tools div {
-        width: 80%;
-        flex-wrap: wrap;
-        margin-bottom: 10vh;
-    }
 
-    #tools div section {
-        width: 48%;
-        height: 50vh;
-        margin-bottom: 2vh;
-    }
 
     /* programmer */
     #programs {

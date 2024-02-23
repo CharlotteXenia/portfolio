@@ -11,7 +11,7 @@
 
 #heading p {
     position: absolute;
-    font-size: 20px;
+    font-size: 2vh;
     font-weight: 700;
 
     margin-top: -30px;
@@ -45,7 +45,7 @@
     text-align: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 20vh;
+    margin-bottom: 15vh;
 }
 
 #whoami h2 {
@@ -63,7 +63,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 }
 
 #whoami section:first-child img {
@@ -99,28 +99,32 @@
 
 .text_border {
     color: transparent;
-    font-size: 28.48px;
+    font-size: 2vw;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #D8FDF6;
 }
 
 #whoami section:last-child div div {
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    height: 35vh;
-    width: 32%;
+    height: 26vh;
+    width: 22.5vw;
     border-radius: 17px;
     background-color: #05504a85;
 }
 
-#whoami section:last-child div img {
+#whoami section:last-child img {
     height: 12vh;
     width: auto;
-    margin-top: 4vh;
+}
+
+#lego {
+    margin-top: 2vh;
     margin-bottom: 2vh;
 }
+
 
 /**************************************************************************/
 /***** portfolio *****/
@@ -148,10 +152,10 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 31.5%;
+    width: 22vw;
     height: 60vh;
     border-radius: 17px;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
     transition: transform 0.3s ease;
     /* Tilføjer en overgang for en glat effekt */
     box-shadow: 0 0 20px rgba(255, 255, 255, 0);
@@ -220,14 +224,26 @@
     display: none;
 }
 
+.projCont,
+.logoCont,
+.illuCont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projCont div {
+    margin: auto;
+}
+
 .modCont {
     display: block;
     width: 70%;
     height: 75vh;
     border-radius: 17px;
     padding: 2%;
-    position: absolute;
-    margin-top: -580vh;
+    position: fixed;
+    top: 14vh;
+    left: 15%;
     z-index: 10;
 }
 
@@ -253,17 +269,149 @@
 }
 
 .modCont h2 {
-    padding-left: 2%;
+    padding-left: 5%;
 }
 
 .modCont p {
-    width: 50%;
-    margin: 2% 0 0 2%;
+    width: 45%;
+    margin: 2% 0 0 5%;
 }
 
 .innerModCont {
     display: flex;
+}
 
+/* billeder og prikker */
+/* Slides */
+#proj1Mock2 {
+    width: 25vw;
+    border-radius: 17px;
+}
+
+#proj1Mock1,
+#proj1Mock2,
+#proj2Mock1,
+#proj2Mock2,
+#proj3Mock1,
+#proj3Mock2 {
+    display: none;
+    text-align: center;
+}
+
+.webLeft {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mockDesk {
+    width: 25vw;
+    border-radius: 17px;
+}
+
+.mockPhone {
+    width: 10vw;
+    border-radius: 17px;
+}
+
+/* STYLING AF SELVE PRIKKERNE */
+.prikker {
+    display: flex;
+}
+
+.prikstil {
+    display: block;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin: 20px 5px;
+    background-color: #5a5a5a;
+    border-radius: 50%;
+    transition: 0.9s ease;
+}
+
+#active,
+.prikstil:hover,
+.prikstil:hover {
+    background-color: #bdb8b8;
+}
+
+/* Hover */
+.activePrik {
+    background-color: #bdb8b8 !important;
+    /* !important sikrer, at denne stil prioriteres */
+}
+
+.portLink {
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+/**************************************************************************/
+/* logoproces */
+.logoLeft {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.proces1 {
+    height: 35vh;
+    border-radius: 17px;
+}
+
+.proces2 {
+    height: 35vh;
+    border-radius: 17px;
+}
+
+.proces3 {
+    width: 15vw;
+    border-radius: 17px;
+}
+
+#logo1Proc1,
+#logo1Proc2,
+#logo1Proc3,
+#logo1Proc4,
+#logo1Proc5,
+#logo2Proc1,
+#logo2Proc2,
+#logo2Proc3,
+#logo2Proc4,
+#logo2Proc5,
+#logo3Proc1,
+#logo3Proc2,
+#logo3Proc3,
+#logo3Proc4,
+#logo3Proc5 {
+    display: none;
+    text-align: center;
+}
+
+.illuCont {
+    margin-right: 5%;
+}
+
+#illustration1,
+#illustration2 {
+    width: 25vw;
+    border-radius: 17px;
+}
+
+#laes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: 0;
+}
+
+#laes a {
+    text-decoration: none;
+    margin-top: 1vh;
 }
 
 /**************************************************************************/
@@ -293,15 +441,20 @@
     flex-direction: column;
     align-items: center;
     width: 23%;
-    height: 60vh;
+    height: 55vh;
     border-radius: 17px;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 }
 
 #tools img {
     height: 10vh;
     width: auto;
     margin: 1vw;
+}
+
+#tools p {
+    width: 80%;
+    margin-top: 2vh;
 }
 
 #tools div section:first-child {
@@ -314,6 +467,11 @@
 
 #tools div section:nth-child(3) {
     background-color: #D8FDF6;
+    color: #010E0D;
+}
+
+#tools div section:nth-child(3) p {
+    color: #010E0D;
 }
 
 #tools div section:nth-child(4) {
@@ -669,6 +827,10 @@
     justify-content: left;
 }
 
+#eller {
+    margin-left: 2.5vw;
+}
+
 /**************************************************************************/
 /*** kontaktformular ***/
 #form {
@@ -725,7 +887,7 @@ button:hover {
 #twirl {
     position: absolute;
     margin-top: 25vh;
-    margin-left: -26vw;
+    margin-right: 26vw;
 }
 
 path {
@@ -773,11 +935,10 @@ path {
     font-size: 16px;
 }
 
-#others_02 h5,
-#others_02 p,
-#others_04 h5,
-#others_04 p {
-    color: #010e0d;
+
+.others_dark h5,
+.others_dark p {
+    color: #010e0d !important;
 }
 
 .proff {
@@ -792,18 +953,15 @@ path {
     width: 70%;
 }
 
-/*********** SE PÅ VW OG VH ************/
 #others div section {
     display: flex;
     justify-content: start;
     flex-direction: column;
     align-items: center;
-
     width: 23%;
-    height: 625px;
-
+    height: 65vh;
     border-radius: 17px;
-    margin-bottom: 60px;
+    margin-bottom: 5vh;
 }
 
 #others div section p {
