@@ -1,4 +1,3 @@
-// Funktion til at opdatere understregningslinjen, når der scrolles
 function updateUnderlineOnScroll() {
     const scrollPosition = window.scrollY;
     const navRect = document.querySelector('nav').getBoundingClientRect();
@@ -272,7 +271,6 @@ let prikkerWeb1 = [proj1Prik1, proj1Prik2];
 
 proj1Mock1.style.display = "block";
 proj1Prik1.classList.add("activePrik");
-console.log("variablerne er lavet");
 
 proj1Prik1.addEventListener("click", function () {
     for (let index = 0; index < mockWeb1.length; index++) {
@@ -572,3 +570,41 @@ logo3Prik5.addEventListener("click", function () {
     logo3Prik5.classList.add("activePrik");
 })
 
+
+/**********************************************************/
+// kontaktform
+
+const form = document.querySelector("form");
+const fullName = document.getElementById("name");
+const email = document.getElementById("email");
+const subject = document.getElementById("subject");
+const message = document.getElementById("message");
+
+function sendEmail() {
+    const bodyMessage = `Navn: ${fullName.value}<br> 
+    Email: ${email.value}<br> Emne: ${subject.value}<br> Besked: ${message.value}`;
+    
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "char.xenia@gmail.com",
+        Password: "8918809653FA01A85944102FF6906C17B6E6",
+        To: 'char.xenia@gmail.com',
+        From: "char.xenia@gmail.com",
+        Subject: subject.value,
+        Body: bodyMessage
+    }).then(
+        message => alert(message)
+    );
+
+    fullName.value = null;
+    email.value = null;
+    subject.value = null;
+    message.value = null;
+}
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    sendEmail();
+
+});

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Charlotte Xenia</title>
     <script src="script.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="topfoot.css">
     <link rel="stylesheet" href="resp.css">
@@ -23,33 +24,27 @@
             <a href="#contact">Kontakt</a>
         </nav>
 
-
-
         <!-- light/dark -->
     </header>
 
     <main>
         <!-- Overskrift -->
         <section id="heading">
-            <p>Velkommen til <span class="gradient-text_01">min</span></p>
-            <h1>PORTFOLIO</h1>
+            <!-- <p>Velkommen til <span class="gradient-text_01">min</span></p>
+            <h1>PORTFOLIO</h1> -->
+            <h1>Charlotte Xenia Nørgaard</h1>
         </section>
 
         <!-- Hvem er jeg -->
         <div id="whoami">
             <section id="whoamih2" data-offset="150">
-                <h2>Hvem er jeg?</h2>
+                <h2>Multimediedesigner med passion for digital brugerindragelse</h2>
 
                 <div id="whoamiCont">
                     <img id="textWrap" src="media/02_portrait.png"
-                        alt="Profilbillede af Charlotte. Billedet er lavet i photoshop med layermasks for at få effekten at billede i tekst.">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc justo massa, commodo eget purus
-                        nec, iaculis tempus nulla. Etiam lacinia lacinia velit, eget sodales felis. Donec tristique ante
-                        dictum, molestie nibh sit amet, pellentesque lectus. Integer sit amet dolor feugiat enim blandit
-                        commodo nec non mi. Pellentesque ullamcorper libero faucibus odio egestas elementum. Sed non
-                        dictum lectus. Curabitur sit amet mauris vel justo consequat accumsan ut et est. Pellentesque
-                        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam aliquet,
-                        lacus id vestibulum mollis, erat elit aliquet arcu, vitae bibendum velit massa eleifend nulla.
+                        alt="Billedet forestiller en ung kvinde med fem softskills lavet i billedet.">
+                    <p>
+                        ........
                     </p>
                 </div>
             </section>
@@ -66,13 +61,15 @@
                     </div>
 
                     <div id="fact">
-                        <img id="lego" src="media/04_lego.svg" alt="">
+                        <img id="lego" src="media/04_lego.svg"
+                            alt="En typisk 2x2 LEGO-klods, som kan bruges i alle aspekter af en LEGO-byggeproces.">
                         <p>Jeg synes, at LEGO er det fedest.</p>
                         <br>
                     </div>
 
                     <div id="fact">
-                        <img src="media/05_tree.svg" alt="">
+                        <img src="media/05_tree.svg"
+                            alt="Illustration af et æbletræ med et rødt æble og en blomst som skal symbolisere bæredygtighed.">
                         <p>Jeg synes, at ideen om bæredygtigt webdesign er virkelig spændende.</p>
                     </div>
                 </div>
@@ -86,17 +83,19 @@
             <div>
                 <section id="webMod">
                     <h3>Webdesign</h3>
-                    <img src="media/06_web_mockup.svg" alt="">
+                    <img src="media/06_web_mockup.svg"
+                        alt="Omrids af en laptop og en smartphone for at illustrere responsivt webdesign.">
                 </section>
 
                 <section id="logoMod">
                     <h3>Logodesign</h3>
-                    <img src="media/07_logodesign.svg" alt="">
+                    <img src="media/07_logodesign.svg" alt="Et symbol lavet udfra ideen om et grid til logodesign.">
                 </section>
 
                 <section id="illuMod">
                     <h3>Illustrationer</h3>
-                    <img src="media/08_easel.svg" alt="">
+                    <img src="media/08_easel.svg"
+                        alt="Outline af et staffeli som skal symbolisere illustrationer lavet i forbindelse med projekter.">
                 </section>
             </div>
         </section>
@@ -105,11 +104,14 @@
         <!-- Rød -->
         <div id="projRed" class="modCont">
             <div class="closeBtn">
-                <img id="closeWeb" src="media/23_close.svg" alt=""> <!-- kryds/luk - id skal ændres ved logo + illu -->
+                <img id="closeWeb" src="media/23_close.svg" alt="Kryds der fungere som luk-knap.">
+                <!-- kryds/luk - id skal ændres ved logo + illu -->
             </div>
 
             <div class="innerModCont">
-                <img id="webArrowLeft" src="media/21_arrow.left.svg" alt=""> <!-- pil venstre-->
+                <img id="webArrowLeft" src="media/21_arrow.left.svg"
+                    alt="Pil som kan føre brugeren tilbage i slidet til forrige projekt.">
+                <!-- pil venstre-->
 
                 <div>
                     <div id="proj1"><!-- projekt1 -->
@@ -120,27 +122,29 @@
                                 <br>
                                 2. semester - eksamen
                                 <br><br>
-                                I dette projekt skulle der udvikles en digital prototype for en selvvalgt virksomhed. I
-                                den pågældende gruppe faldt valget på Moesgaard Museums specialudstilling “Besat af
-                                Livet”, en specialudstilling om den egyptiske mytologi.
+                                I dette projekt skulle der udvikles en digital interaktiv prototype som kunne skabe
+                                værdi for en selvvalgt virksomhed.
                                 <br><br>
-                                I projektet var der overvejende fokus på brugen af JavaScript samt hvordan dette kunne
-                                bruges til at skabe en digital interaktiv fortælling, som ville guide den digitale
-                                bruger ud til den fysiske udstilling,
+                                Som gruppe faldt vores valg på Moesgaard Museums specialudstille "Besat af livet", som
+                                formidler den oldegyptisk tro på livet og livet efter døden.
                                 <br><br>
-                                Projektet bød på mange overvejelser og endte med en prototype, som byder op til
-                                fordybelse og indlevelse samt en snert af leg.
+                                Det var et projekt med stor kreativ frihed, hvor vi i høj grad kunne prøve kræfter med
+                                JavaScript, som havde været semesterets fokus.
+                                <br><br>
+                                Mit primære ansvar var skitsering og tekstindhold på siden.
                             </p>
 
                             <div class="webLeft">
-                                <img class="mockDesk" id="proj1Mock1" src="media/gif/moesdesk.gif" alt="">
-                                <img id="proj1Mock2" src="media/gif/moesmob.gif" alt="">
+                                <img class="mockDesk" id="proj1Mock1" src="media/gif/moesdesk.gif"
+                                    alt="Gif-laptop-mockup af projektet Besat af livet, som formidler den oldegyptiske tro.">
+                                <img id="proj1Mock2" src="media/gif/moesmob.gif"
+                                    alt="Gif-mobil-mockup af projektet Besat af livet, som formidler den oldegyptiske tro.">
 
                                 <div class="prikker"> <!-- prikker -->
                                     <span class="prikstil" id="proj1Prik1"></span>
                                     <span class="prikstil" id="proj1Prik2"></span>
                                 </div>
-                                <a class="portLink" href="">Besøg siden</a>
+                                <a class="portLink" href="https://xeniadesigns.dk/besataflivet/">Besøg sitet her!</a>
                             </div>
                         </div>
                     </div>
@@ -153,26 +157,25 @@
                                 <br>
                                 1. semester - eksamen
                                 <br><br>
-                                I dette projekt var emnet “hemmelige steder du holder af”. Her skulle produceres et
-                                website med udgangspunkt i minimum tre steder, som havde personlig betydning, og det
-                                skulle være steder, som ikke alle kender til.
+                                Dette projekt handlede om digitalt at formidle informationer om mindre kendte steder i
+                                Danmark, som vi hver især holder af. Mit valg faldt på Thy, da det er der, jeg er vokset
+                                op.
                                 <br><br>
-                                Jeg valgte at lave projektet om min hjemstavn Thy, da det område betyder meget for mig,
-                                og det er et område, som jeg ville ønske for alle, at de kendte til.
-                                <br><br>
-                                Projektet er lavet som et fundament til et projekt der muligvis skal arbejdes videre på
-                                senere med henblik på implementering af booking- og planlægningsmuligheder og systemer.
-                            </p>
-
+                                Ideen bag projektet var et ønske fra en bekendt om, at have adgang til en side, hvor det
+                                er muligt at planlægge sit besøg i området. Den opgave var i midler tid for stor og uden
+                                for faglig kunne på det givne tidspunkt, og derfor blev det til en slags prototype, som
+                                der kan arbejdes videre i fremtiden.
                             <div class="webLeft">
-                                <img class="mockDesk" id="proj2Mock1" src="media/gif/oplevdesk.gif" alt="">
-                                <img class="mockPhone" id="proj2Mock2" src="media/gif/oplevmob.gif" alt="">
+                                <img class="mockDesk" id="proj2Mock1" src="media/gif/oplevdesk.gif"
+                                    alt="Gif-laptop-mockup af projektet Oplev Thy, som er et oplevelsessite for besøgsværdige steder i Thy.">
+                                <img class="mockPhone" id="proj2Mock2" src="media/gif/oplevmob.gif"
+                                    alt="Gif-mobil-mockup af projektet Oplev Thy, som er et oplevelsessite for besøgsværdige steder i Thy.">
 
                                 <div class="prikker"><!-- prikker -->
                                     <span class="prikstil" id="proj2Prik1"></span>
                                     <span class="prikstil" id="proj2Prik2"></span>
                                 </div>
-                                <a class="portLink" href="">Besøg sitet!</a>
+                                <a class="portLink" href="https://xeniadesigns.dk/oplevthy/">Besøg sitet her!</a>
                             </div>
                         </div>
                     </div>
@@ -185,61 +188,85 @@
                                 <br>
                                 1. semester
                                 <br><br>
+                                Dette projekt blev kaldt Mobile First. Det var første gang vi skulle arbejde med
+                                responsivt design.
+                                <br><br>
+                                I gruppen valgte vi at give dagshøjskolen Frontsession en make-over.
+                                <br><br>
+                                Vi havde naturligvis fokus på det responsive design, men på baggrund af research og
+                                brugertests fik vi også skabet en mere brugervenlig oplevelse for både nye og gamle
+                                elever.
+                                <br><br>
+                                Mine primære ansvarsområder var redesign af logo og tekstindhold.
                             </p>
 
                             <div class="webLeft">
-                                <img class="mockDesk" id="proj3Mock1" src="media/gif/frontdesk.gif" alt="">
-                                <img class="mockPhone" id="proj3Mock2" src="media/gif/frontmob.gif" alt="">
+                                <img class="mockDesk" id="proj3Mock1" src="media/gif/frontdesk.gif"
+                                    alt="Gif-laptop-mockup af projektet Mobile first, som er lavet som redesign at dagshøjskolen Frontsession.">
+                                <img class="mockPhone" id="proj3Mock2" src="media/gif/frontmob.gif"
+                                    alt="Gif-mobil-mockup af projektet Mobile first, som er lavet som redesign at dagshøjskolen Frontsession.">
 
                                 <div class="prikker"> <!-- prikker -->
                                     <span class="prikstil" id="proj3Prik1"></span>
                                     <span class="prikstil" id="proj3Prik2"></span>
                                 </div>
-                                <a class="portLink" href="">Besøg sitet!</a>
+                                <a class="portLink" href="https://xeniadesigns.dk/frontsession/">Besøg sitet her!</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img id="webArrowRight" src="media/22_arrow.right.svg" alt=""> <!-- pil højre -->
+                <img id="webArrowRight" src="media/22_arrow.right.svg"
+                    alt="Pil som kan føre brugeren frem i slidet og videre til næste projekt."> <!-- pil højre -->
             </div>
         </div>
 
         <!-- Logodesign - modal -->
         <div id="logoBlue" class="modCont">
             <div class="closeBtn">
-                <img id="closeLogo" src="media/23_close.svg" alt=""> <!-- kryds/luk - id skal ændres ved logo + illu -->
+                <img id="closeLogo" src="media/23_close.svg" alt="Kryds der fungere som luk-knap.">
+                <!-- kryds/luk - id skal ændres ved logo + illu -->
             </div>
 
             <div class="innerModCont">
-                <img id="logoArrowLeft" src="media/21_arrow.left.svg" alt=""> <!-- pil venstre-->
+                <img id="logoArrowLeft" src="media/21_arrow.left.svg"
+                    alt="Pil som kan føre brugeren tilbage i slidet til forrige logo.">
+                <!-- pil venstre-->
 
                 <div>
                     <div id="logo1"><!-- projekt1 -->
                         <h2>Portfolio</h2>
 
                         <div class="logoCont"> <!-- display flex -->
-                            <p class="logoContText">Projekttype: Solo
-                                <br>
-                                3. semester - portfolioeksamen
+                            <p class="logoContText">
+                                Til det projekt som du lige nu bevæger dig rundt i, har jeg selv været i gang med at
+                                udarbejde et logo. Jeg var meget tidligt i processen klar over, at jeg ville
+                                implementere dele af mit navn, og så handlede det mest om, at finde den rigtige måde at
+                                gøre det på.
                                 <br><br>
-                                I dette projekt skulle der udvikles en digital prototype for en selvvalgt virksomhed. I
-                                den pågældende gruppe faldt valget på Moesgaard Museums specialudstilling “Besat af
-                                Livet”, en specialudstilling om den egyptiske mytologi.
+                                Jeg forsøgte med forskellige logotyper, men endte ud med at tegne en gladiolus og
+                                bruge den som element.
                                 <br><br>
-                                I projektet var der overvejende fokus på brugen af JavaScript samt hvordan dette kunne
-                                bruges til at skabe en digital interaktiv fortælling, som ville guide den digitale
-                                bruger ud til den fysiske udstilling,
+                                Valget af gladiolus-blomsten bunder i konceptet "fødselsblomst", hvor gladiolus altså er
+                                blomstenfor den måned, jeg er født. På den måde kunne jeg peronliggøre mit logo endnu
+                                mere.
                                 <br><br>
-                                Projektet bød på mange overvejelser og endte med en prototype, som byder op til
-                                fordybelse og indlevelse samt en snert af leg.
+                                Det viste sig at være den rigtige vej at gå, for
+                                pludselig havde jeg mine tre forbogstaver implementeret, uden at det var åbenlyst.
+                                <br><br>
+                                Det første billede til højre er det færdige resultat.
                             </p>
 
                             <div class="logoLeft">
-                                <img class="proces1" id="logo1Proc1" src="media/processer/endelig.gif" alt="">
-                                <img class="proces1" id="logo1Proc2" src="media/processer/proces1.gif" alt="">
-                                <img class="proces1" id="logo1Proc3" src="media/processer/proces2.gif" alt="">
-                                <img class="proces1" id="logo1Proc4" src="media/processer/proces4.gif" alt="">
-                                <img class="proces1" id="logo1Proc5" src="media/processer/proces5.gif" alt="">
+                                <img class="proces1" id="logo1Proc1" src="media/processer/endelig.gif"
+                                    alt="Det endelige resultat af et logodesig. Forestille et C, et N og en gladiolus-stilk, som sammen danner CXN.">
+                                <img class="proces1" id="logo1Proc2" src="media/processer/proces1.gif"
+                                    alt="Et forsøgsresultat af et logodesig. Forestille et C, et N og en gladiolus-stilk, som sammen danner CXN.">
+                                <img class="proces1" id="logo1Proc3" src="media/processer/proces2.gif"
+                                    alt="Et forsøgsresultat af et logodesig. Forestille et C, et X og en gladiolus-stilk.">
+                                <img class="proces1" id="logo1Proc4" src="media/processer/proces4.gif"
+                                    alt="Et forsøgsresultat af et logodesig. Forstiller bogstaverne C og X over to gladiolus-stilke.">
+                                <img class="proces1" id="logo1Proc5" src="media/processer/proces5.gif"
+                                    alt="Et forsøgsresultat af et logodesig. Forstiller bogstaverne C og X omgivet af tre gladiolus-stilke.">
 
                                 <div class="prikker"> <!-- prikker -->
                                     <span class="prikstil" id="logo1Prik1"></span>
@@ -256,19 +283,20 @@
                         <h2>Oplev Thy</h2>
 
                         <div class="logoCont">
-                            <p class="logoContText">Projekttype: Solo
-                                <br>
-                                1. semester, eksamen
+                            <p class="logoContText">
+                                I forbindelse med mit Oplev Thy-eksamensprojekt udarbejde jeg også et logo.
                                 <br><br>
-                                I dette projekt var emnet “hemmelige steder du holder af”. Her skulle produceres et
-                                website med udgangspunkt i minimum tre steder, som havde personlig betydning, og det
-                                skulle være steder, som ikke alle kender til.
+                                Her var det vigtigt for mig, at området blev præsenteret på bedst muligvis, og for at
+                                ramme tonen for Thy, lavede jeg noget research på, hvordan andre brugere af Thy-brandet
+                                implemnterede området i deres identitet, og på den måde fandt jeg inspiration til mig
+                                eget logo.
                                 <br><br>
-                                Jeg valgte at lave projektet om min hjemstavn Thy, da det område betyder meget for mig,
-                                og det er et område, som jeg ville ønske for alle, at de kendte til.
+                                Jeg var igennem forskellige faser i udviklingen og endte med et logo, som for mig
+                                personligt viser, præcis hvad Thy er.
                                 <br><br>
-                                Projektet er lavet som et fundament til et projekt der muligvis skal arbejdes videre på
-                                senere med henblik på implementering af booking- og planlægningsmuligheder og systemer.
+                                Enkelt, roligt og naturligt.
+                                <br><br>
+                                Det første billede til højre, er det færdige resultat.
                             </p>
 
                             <div class="logoLeft">
@@ -293,28 +321,33 @@
                         <h2>Frontsession</h2>
 
                         <div class="logoCont">
-                            <p class="logoContText">Projekttype: Solo
-                                <br>
-                                3. semester - portfolioeksamen
+                            <p class="logoContText">
+                                I forbindelse med redesignet af Frontsessions website, kom logoet også under behandling,
+                                og det var noget af det første, der blev arbejdet med, da vi havde en idé om, at det
+                                kunne danne grundlag for resten af designet.
                                 <br><br>
-                                I dette projekt skulle der udvikles en digital prototype for en selvvalgt virksomhed. I
-                                den pågældende gruppe faldt valget på Moesgaard Museums specialudstilling “Besat af
-                                Livet”, en specialudstilling om den egyptiske mytologi.
+                                Jeg arbejde ud fra det originale logo, og tog elementer derfra med over i det nye, og
+                                helt ærligt, så gik der noget tid, før det gik op for mig, at symbolet i venstre side
+                                skulle illustere en højtaler, men jeg syntes, ideen var virkelig god, så jeg arbejde med
+                                at synliggøre, hvad vi havde med at gøre.
                                 <br><br>
-                                I projektet var der overvejende fokus på brugen af JavaScript samt hvordan dette kunne
-                                bruges til at skabe en digital interaktiv fortælling, som ville guide den digitale
-                                bruger ud til den fysiske udstilling,
+                                Efterfølgende tog jeg farverne fra højtalerikonet og implementerede dem i det nye logo,
+                                og disse farver blev elementer i det færdige redesign.
                                 <br><br>
-                                Projektet bød på mange overvejelser og endte med en prototype, som byder op til
-                                fordybelse og indlevelse samt en snert af leg.
+                                Det færdige resultat er første billede i højre side og originalen nr. 2.
                             </p>
 
                             <div class="logoLeft">
-                                <img class="proces3" id="logo3Proc1" src="media/processer/front_01.gif" alt="">
-                                <img class="proces3" id="logo3Proc2" src="media/processer/front_endelig.gif" alt="">
-                                <img class="proces3" id="logo3Proc3" src="media/processer/front_02.gif" alt="">
-                                <img class="proces3" id="logo3Proc4" src="media/processer/front_03.gif" alt="">
-                                <img class="proces3" id="logo3Proc5" src="media/processer/front_04.gif" alt="">
+                                <img class="proces3" id="logo3Proc1" src="media/processer/front_endelig.gif"
+                                    alt="Logo for dagshøjskolen Frontsession. Forestiller en højtaler i blå, grå og hvide farver med noder som skal illustere, at der kommer musik ud af den. Desuden er navnet Musikskolen Frontsession også implementeret.">
+                                <img class="proces3" id="logo3Proc2" src="media/processer/front_01.gif"
+                                    alt="Det originale logo dagshøjskolen Frontsessions originale website. Forestiller en højtaler i blå, hvide og orange farver. Desuden er navnet Musikskolen Frontsession også implementeret">
+                                <img class="proces3" id="logo3Proc3" src="media/processer/front_04.gif"
+                                    alt="Logoforsøg for dagshøjskolen Frontsession. Forestiller en højtaler i blå, grå og hvide farver med noder som skal illustere, at der kommer musik ud af den. Desuden er navnet Musikskolen Frontsession også implementeret.">
+                                <img class="proces3" id="logo3Proc4" src="media/processer/front_03.gif"
+                                    alt="Skitsefase.Forestiller en højtaler i blå, grå og hvide farver. Desuden er navnet Musikskolen Frontsession også implementeret.">
+                                <img class="proces3" id="logo3Proc5" src="media/processer/front_02.gif"
+                                    alt="Skitsefase.Forestiller en højtaler i sort. Desuden er navnet Musikskolen Frontsession også implementeret.">
 
                                 <div class="prikker"> <!-- prikker -->
                                     <span class="prikstil" id="logo3Prik1"></span>
@@ -327,42 +360,40 @@
                         </div>
                     </div>
                 </div>
-                <img id="logoArrowRight" src="media/22_arrow.right.svg" alt=""> <!-- pil højre -->
+                <img id="logoArrowRight" src="media/22_arrow.right.svg"
+                    alt="Pil som kan føre brugeren frem i slidet til næste logo."> <!-- pil højre -->
             </div>
         </div>
 
         <!-- Illustrationer - modal -->
         <div id="illuGreen" class="modCont">
             <div class="closeBtn">
-                <img id="closeIllu" src="media/23_close.svg" alt=""> <!-- kryds/luk - id skal ændres ved logo + illu -->
+                <img id="closeIllu" src="media/23_close.svg" alt="Kryds der fungere som luk-knap.">
+                <!-- kryds/luk - id skal ændres ved logo + illu -->
             </div>
 
             <div class="innerModCont">
-                <img id="illuArrowLeft" src="media/21_arrow.left.svg" alt=""> <!-- pil venstre-->
+                <img id="illuArrowLeft" src="media/21_arrow.left.svg"
+                    alt="Pil som kan føre brugere tilbage i slidet til forrige illustration.">
+                <!-- pil venstre-->
 
                 <div>
                     <div id="illu1"><!-- projekt1 -->
                         <h2>Parallax i Figma</h2>
 
                         <div class="illuCont"> <!-- display flex -->
-                            <p class="illuContText">Projekttype: Gruppe
-                                <br>
-                                2. semester, eksamen
+                            <p class="illuContText">
+                                Som en del af undervisningen skulle vi lærer at arbejde med parallax-scrolling i Figma.
                                 <br><br>
-                                I dette projekt skulle der udvikles en digital prototype for en selvvalgt virksomhed. I
-                                den pågældende gruppe faldt valget på Moesgaard Museums specialudstilling “Besat af
-                                Livet”, en specialudstilling om den egyptiske mytologi.
+                                I samme opgave skulle vi forholde os til en gældende designtrend, hvor valget faldt på
+                                Viva Magenta, som var farven for 2023 ifølge Pantone.
                                 <br><br>
-                                I projektet var der overvejende fokus på brugen af JavaScript samt hvordan dette kunne
-                                bruges til at skabe en digital interaktiv fortælling, som ville guide den digitale
-                                bruger ud til den fysiske udstilling,
-                                <br><br>
-                                Projektet bød på mange overvejelser og endte med en prototype, som byder op til
-                                fordybelse og indlevelse samt en snert af leg.
+                                Det kom der dette resultat ud af ->
                             </p>
 
                             <div class="modalLeft">
-                                <img id="illustration1" src="media/illustrationer/parallax.gif" alt="">
+                                <img id="illustration1" src="media/illustrationer/parallax.gif"
+                                    alt="Illustration af en lufballon som svæver op på himlen, mens stjernerne kommer frem. Illustrationen er i forskellige nuancer af magenta.">
                             </div>
                         </div>
                     </div>
@@ -370,109 +401,120 @@
                     <div id="illu2"><!-- projekt2 -->
                         <h2>Baggrund - Læsehjørnet</h2>
 
-
                         <div class="illuCont">
-                            <p class="illuContText">Projekttype: Solo
-                                <br>
-                                1. semester, eksamen
+                            <p class="illuContText">Denne illustration er fra mit føste soloprojekt under temaet Online
+                                Magasin.
                                 <br><br>
-                                I dette projekt var emnet “hemmelige steder du holder af”. Her skulle produceres et
-                                website med udgangspunkt i minimum tre steder, som havde personlig betydning, og det
-                                skulle være steder, som ikke alle kender til.
+                                Opgaven var at uarbejde og producere et online magasin ud fra en personlig interesse, og
+                                jeg valgte at lave mit website baseret på bøger.
                                 <br><br>
-                                Jeg valgte at lave projektet om min hjemstavn Thy, da det område betyder meget for mig,
-                                og det er et område, som jeg ville ønske for alle, at de kendte til.
+                                For mig er bøger indbegrebet af hygge og ro, og den stemning ønskede jeg at indfange med
+                                mit baggrundsbillede.
                                 <br><br>
-                                Projektet er lavet som et fundament til et projekt der muligvis skal arbejdes videre på
-                                senere med henblik på implementering af booking- og planlægningsmuligheder og systemer.
+                                Til illustrationen fandt jeg silhuetter af forskellige typer træer og bjerge, hvorefter
+                                jeg udvalgte dele, jeg kunne bruge. Efterfølgende blev de omfarvet og placeret i lag så
+                                billedet fik noget dybde.
+                                <br><br>
+                                <a href="https://xeniadesigns.dk/laesehjoernet/">Se den i brug her</a>
                             </p>
 
                             <div class="modalLeft" id="laes">
                                 <img id="illustration2" src="media/illustrationer/baggrund4.jpg" alt="">
 
-                                <a href="https://xeniadesigns.dk/laesehjoernet/">Se den i brug her</a>
                             </div>
                         </div>
                     </div>
 
-                    <div id="illu3"><!-- projekt3 -->
-                        <h2>###</h2>
+                    <div id="illu3">
+                        <h2>Tekst-animation</h2>
 
                         <div class="illuCont">
-                            <p class="illuContText">Projekttype: gruppe
-                                <br>
-                                1. semester
+                            <p class="illuContText">
+                                I begyndelsen af 2. semester begyndte vi at arbejde med animationer i programmering,
+                                og jeg blev ret hooked på ideen om en animation, som den du ser her ved siden af, som en
+                                intro til min portfolio.
                                 <br><br>
-                                bla bla bla
+                                Ideen levede længe, men da portfolio-projektet kom, passede illustrationen ikke rigtig
+                                ind i stilen, og derfor kommer den med her istedet.
+                                <br><br>
+                                Animationen er lavet med Figma, HTML, CSS og JavaScript.
                             </p>
 
                             <div class="modalLeft">
-                                <img src="" alt="">
+                                <img id="illustration3" src="media/illustrationer/xeniadesigns.gif"
+                                    alt="En animation af navnet XeniaDesigns skrevet med snirklede bogstaver med hvis outline på en mørkeblå baggrund.">
                             </div>
                         </div>
                     </div>
                 </div>
-                <img id="illuArrowRight" src="media/22_arrow.right.svg" alt=""> <!-- pil højre -->
+                <img id="illuArrowRight" src="media/22_arrow.right.svg"
+                    alt="Pil som kan føre brugeren frem i slidet til næste illustration."> <!-- pil højre -->
             </div>
         </div>
 
         <!-- Værktøjer -->
         <section id="tools">
-            <h4>Værktøjer jeg benytter</h4>
+            <h4>Mine <span class="text_border">arbejdsområder</span></h4>
 
             <div>
                 <section>
-                    <img src="media/09_ux.svg" alt="">
+                    <img src="media/09_ux.svg" alt="Profilikon med sort outline">
                     <div class="uline"></div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Som UX’er har jeg stort fokus på at forstå brugerens behov. Gennem denne forståelse kan jeg skabe
+                        et produkt, som opfylder brugerens behov og dermed skaber en positiv oplevelse. Gennem
+                        brugertests og en iterativ designproces bliver jeg i stand til at sikre brugervenlige produkter.
+                    </p>
                 </section>
 
                 <section>
-                    <img src="media/10_pen.svg" alt="">
+                    <img src="media/10_pen.svg" alt="Pen i bevægelse i sort. Skal illustrere design.">
                     <div class="uline"></div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Design er ikke blot æstetik; det er en symbiose mellem form og funktion. Gennem en
+                        kombina-<br>tion af
+                        kreativitet og teknisk viden, bliver jeg i stand til at udarbejde visuelle identiteter og
+                        brugergrænseflader, som ikke bare skiller sig ud, men også tydeligt kommunikerer med målgruppen.
+                    </p>
                 </section>
 
                 <section>
-                    <img src="media/11_test.svg" alt="">
+                    <img src="media/11_test.svg"
+                        alt="En skriveplade med en tjekliste i sort outline. Skal illustrere test.">
                     <div class="uline"></div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Brugertests er uundværlige for enhver digital løsning. Jeg gennemfører tests for at opdage og
+                        rette eventuelle fejl eller mangler, inden produktet frigives. Formålet er at sikre, at
+                        produktet lever op til de højeste standarder for funktionalitet og ydeevne.</p>
                 </section>
 
                 <section>
-                    <img src="media/12_prog.svg" alt="">
+                    <img id="prog" src="media/12_prog.svg" alt="Symbol for programmering i sort outline.">
                     <div class="uline"></div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Som frontend-udvikler brænder jeg for at skabe og udvikle inddragende og intuitive
+                        brugeroplevelser, som tager brugeren med på en rejse gennem et website. Gennem brug af HTML, CSS
+                        og JavaScript sikre jeg at brugeroplevelsen ikke kun ser godt ud, men også fungerer på tværs
+                        af skærmstørrelser og enheder.</p>
                 </section>
             </div>
         </section>
 
         <!-- Programmer -->
         <section id="programs">
-            <h4>Programmer jeg bruger</h4>
+            <h4><span class="text_border">Programmer</span> jeg bruger</h4>
 
             <div>
                 <section>
-                    <img src="media/13_vscode.png" alt="">
+                    <img src="media/13_vscode.png"
+                        alt="Ikon i blå nuancer for programmerings-programmet Visual Studio Code. ">
                     <p>Visual Studio Code</p>
                 </section>
 
                 <section>
-                    <img src="media/14_figma.png" alt="">
+                    <img src="media/14_figma.png" alt="Ikon i røde, blå, lilla og grønne farver for programmet Figma.">
                     <p>Figma</p>
                 </section>
             </div>
 
             <section>
-                <img src="media/15_adobe.png" alt="">
+                <img src="media/15_adobe.png" alt="Sort ikon som ligner en sky - illusterer Adobe Creative Cloud.">
                 <p id="ado">Adobe Photoshop & Illustrator</p>
             </section>
         </section>
@@ -492,11 +534,17 @@
                             <div class="content">
                                 <h4>Multimediedesign</h4>
                                 <p>Erhvervsakademi Aarhus</p>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged.</p>
+                                <p>Gennem uddannelsen har jeg lært at omsætte min evne til at lytte til at opfylde et
+                                    digitalt behov, og jeg kan gennem research og brugertest udarbejde skitser,
+                                    wireframes
+                                    og mockups som skaber fundamentet for værdifulde resultater.
+                                    <br><br>
+                                    Jeg har fået mulighed for at kombinere kreativ tænkning med teknologisk og digital
+                                    nysgerrighed, og jeg bliver hele tiden sulten efter mere.
+                                    <br><br>
+                                    Multimediedesignuddannelsen har åbnet op for en verden, jeg havde glemt, men som jeg
+                                    er elsker og er enormt facineret af.
+                                </p>
                             </div>
                             <div class="time">
                                 <h5>2023</h5>
@@ -507,11 +555,13 @@
                             <div class="content">
                                 <h4>Teknisk designer</h4>
                                 <p>Aarhus TECH</p>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged.</p>
+                                <p>På uddannelsens grundforløb lærte jeg om både industrielt design og bygningsdesign.
+                                    Vi producerede håndlavede skitser og omsatte disse til produkttegninger i AutoDesk
+                                    AutoCad samt plantegninger og snittegninger i AutoDesk Revit.
+                                    <br><br>
+                                    Fra forløbet har jeg taget med mig, at skitser ikke er perfekte, og det er ikke
+                                    meningen, at de skal være det.
+                                </p>
                             </div>
                             <div class="time">
                                 <h5>2015</h5>
@@ -522,11 +572,13 @@
                             <div class="content">
                                 <h4>Industriteknikker</h4>
                                 <p>EUC Nordvest (UCN)</p>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged.</p>
+                                <p>Dette var et grundforløb for unge med en studentereksamen, hvor der kun var fokus på
+                                    de håndværksmæssige dele af uddannelsen. Her lærte jeg at betjene manuelle maskiner
+                                    som drejebænk, fræser og bor i fremstillingen af produktelementer.
+                                    <br><br>
+                                    Fra forløbet har jeg taget med, at præcision har betydning, og at perfektionistiske
+                                    træk kan være en kæmpe fordel.
+                                </p>
                             </div>
                             <div class="time">
                                 <h5>2014</h5>
@@ -544,11 +596,11 @@
                             <div class="content">
                                 <h4>Studieambassadør</h4>
                                 <p>Erhvervsakademi Aarhus</p>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged.</p>
+                                <p>Som studieambassadør på uddannelsen var jeg med ude i to gymnasieklasser og en
+                                    HF-klasse, hvor jeg sammen med en studiekammerat præsenterede vores uddannelse og
+                                    havde nogle opgaver med, som klasserne skulle løse, for at få et indblik i
+                                    uddannelsens indhold og struktur. Vi var desuden til rådighed for at svare på
+                                    spørgsmål om vores specifikke uddannelse samt skolen generelt.</p>
                             </div>
 
                             <div class="time">
@@ -560,11 +612,9 @@
                             <div class="content">
                                 <h4>Tutor</h4>
                                 <p>Erhvervsakademi Aarhus</p>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged.</p>
+                                <p>I starten af uddannelsens 3. semester var jeg tutor for et nyt hold studerende. Her
+                                    var opgaven at klæde dem på til de kommende år, ved at svare på spørgsmål de måtte
+                                    have, samt at hjælpe dem med at få skabt et fundament for socialt sammenhold.</p>
                             </div>
 
                             <div class="time">
@@ -581,13 +631,15 @@
                     <ul>
                         <li>
                             <div class="content">
-                                <h4>Multimediedesign</h4>
-                                <p>Erhvervsakademi Aarhus</p>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged.</p>
+                                <h4>Servieassistent</h4>
+                                <p>Aarhus Universistetshospital</p>
+                                <p>I min tid på AUH var jeg placeret forskellige stedet. Jeg startede ud på det centrale
+                                    lager og var med i udflytning og sammenlægningen af de tre hospitaler.
+                                    <br><br>
+                                    I min tid på AUH har jeg haft ansvar for varelevering på specifikke afdelinger,
+                                    været bindeled mellem afdelinger samt haft oceaner af skæve opgaver som
+                                    genindretning af depotrum, udtænkning af nyt tekøkken og andre skøre ting.
+                                </p>
                             </div>
                             <div class="time">
                                 <h5>2023</h5>
@@ -605,11 +657,14 @@
                             <div class="content">
                                 <h4>Bestyrelsesmedlem</h4>
                                 <p>Børnegården Rundhøj</p>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged.</p>
+                                <p>Som Bestyrelsesmedlem i Børnegården, får jeg indblik i hvad det vil sige at drive en
+                                    selvejende institution, samtidig med at jeg får mulighed for at se ind bag
+                                    strukturen, og have medbestemmelse omkring, hvad der gavner institutionens børn og
+                                    ansatte.
+                                    <br><br>
+                                    Det er en opgave, som jeg finde meget givende, og jeg håber, at jeg
+                                    kan få lov til at blive siddende nogle år endnu.
+                                </p>
                             </div>
                             <div class="time">
                                 <h5>2023</h5>
@@ -620,14 +675,15 @@
                             <div class="content">
                                 <h4>Barsel</h4>
                                 <p>Hjemme</p>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged.</p>
+                                <p>Det vildeste af alle jobs. Jobbet som mor.
+                                    <br><br>
+                                    I september 2020 fik jeg min datter, Enaya, og hun er uden tvivl min størte bedrift.
+                                    Hun fuldender mig som menneske, og hun udfordre mig, så jeg hele tiden bliver mere
+                                    tålmodig, mere lyttende og mere til stedet i nuet.
+                                </p>
                             </div>
                             <div class="time">
-                                <h5>2020</h5>
+                                <h5>2020-2021</h5>
                             </div>
                         </li>
                         <div style="clear:both;"></div>
@@ -638,26 +694,26 @@
 
         <!-- Kontakt -->
         <section id="contact" data-offset="200">
-            <h2>Jeg glæder mig til at høre fra dig!</h2>
+            <h2>Jeg <span class="solo_color">glæder</span> mig til at høre fra dig!</h2>
 
             <div id="contact_content">
                 <div>
-                        <p>Tusind tak for din tid.
-                            <br><br>
-                            Skulle du sidde med spørgsmål eller blot have
-                            lyst til en snak, så tøv endelig ikke med at kontakte
-                            mig - jeg er altid klar på en snak!
-                            <br><br>
-                            Kontaktoplysninger:
-                        </p>
+                    <p>Tusind tak for din tid!
+                        <br><br>
+                        Skulle du sidde med spørgsmål eller blot have
+                        lyst til en snak, så tøv endelig ikke med at kontakte
+                        mig - jeg er altid klar på en snak!
+                        <br><br>
+                        Kontaktoplysninger:
+                    </p>
 
-                    <div >
-                        <img id="phone" src="media/16_call.svg" alt="">
+                    <div>
+                        <img id="phone" src="media/16_call.svg" alt="Illustration af et telefonrør i hvid.">
                         <p>+45 2963 3114</p>
                     </div>
 
                     <div id="contEmail">
-                        <img src="media/17_sms.svg" alt="">
+                        <img src="media/17_sms.svg" alt="Illustration af et blev i hvid.">
                         <p>char.xenia@gmail.com
                         </p>
                     </div>
@@ -670,11 +726,25 @@
                 </div>
 
                 <!-- kontaktform -->
-                <form>
-                    <input type="text" id="name" placeholder="Navn" autocomplete="given-name" required>
-                    <input type="email" id="email" placeholder="Email" autocomplete="family-name" required>
-                    <textarea id="message" rows="6" placeholder="Skriv din besked her..." autocomplete="off"
-                        required></textarea>
+                <form action="#">
+                    <div class="input-box">
+                        <div class="input-field">
+                            <input type="text" placeholder="Navn" id="name" class="item" autocomplete="off" required>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="email" placeholder="Email" id="email" class="item" autocomplete="off" required>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="text" placeholder="Emne" id="subject" class="item" autocomplete="off" required>
+                        </div>
+                    </div>
+
+                    <div class="textarea-field">
+                        <textarea name="" placeholder="Din besked her..." id="message" cols="30" rows="6"
+                            autocomplete="off" required></textarea>
+                    </div>
                     <button type="submit">Send besked</button>
                 </form>
             </div>
@@ -703,7 +773,7 @@
             <div>
                 <!-- Box_01-->
                 <section>
-                    <img src="media/09_ux.svg" alt="">
+                    <img src="media/hanne.png" alt="Smilende kvinde med kort hår og briller.">
                     <h5>Hanne Skjærlund Andersen</h5>
                     <p class="proff">Lektor, Erhvervsakademi Aarhus</p>
                     <p><em>"Charlotte er en meget grundig og arbejdsom studerende som deltager aktivt, uanset om det er
@@ -714,18 +784,36 @@
 
                 <!-- Box_02 -->
                 <section class="others_dark">
-                    <img src="media/09_ux.svg" alt="">
+                    <img src="media/thomas.png" alt="Ung mand med briller i hospitalsuniform på helipad.">
                     <h5>Thomas Holm Andersen</h5>
                     <p class="proff">Projektleder, Aarhus Universitetshospital</p>
-                    <p></p>
+                    <p><em>"Charlotte har med sin rolige fremtræden, loyalitet og pligtopfyldende
+                            indstilling kunne give klinikken en vareunderstøttelse, der har givet
+                            mulighed for at sikre høj faglig behandling af patienterne.
+                            <br><br>
+                            Charlotte formår deslige skriftligt at formidle implementeringsplaner
+                            og økonomisk sagsbehandling til ledelsen på de projekter, som hun
+                            har været drivkraft i.
+                            <br><br>
+                            Jeg kan på det varmeste anbefale Charlotte som person og de
+                            kompetencer som hun besidder."</em></p>
                 </section>
 
                 <!-- Box_03 -->
                 <section>
-                    <img src="media/09_ux.svg" alt="">
-                    <h5>Navn</h5>
-                    <p class="proff"></p>
-                    <p></p>
+                    <img src="media/alex.png" alt="Billede af en ung mand med mørkt hår og briller.">
+                    <h5>Alex Rasmussen</h5>
+                    <p class="proff">Kæreste</p>
+                    <p><em>"Charlotte er en fantastisk partner. Både i livet, men især i alle de projekter vi har lavet
+                            sammen gennem tiden.
+                            <br><br>
+                            Om det har været skoleprojekter fra vores tid på HTX sammen, eller hvis min far skulle have
+                            sat telt på sin campingvogn, er der ingen bedre end hende til at skabe de løsninger, der
+                            giver det bedste resultat.
+                            <br><br>
+                            Hun har altid dem omkring sig med og tager deres følelser alvorligt, så med Charlotte er man
+                            sikker på at der er plads til alle og ingen bliver efterladt eller glemt."
+                        </em></p>
                 </section>
 
                 <!-- Box_04-->
@@ -733,12 +821,14 @@
                     <img src="media/09_ux.svg" alt="">
                     <h5>Safa Daoudi</h5>
                     <p class="proff">Medstuderende</p>
-                    <p><em>"Noget der er kendetegnende i et projekt med Charlotte, er hendes evne til at være åbensindet
-                            for
-                            idéer og omstillingsparat i situationer, der kræver handling. <br><br>Hun er altid velmødt,
-                            forberedt og
-                            løsningsorienteret i stressede situationer. <br><br>Det er særligt hendes imødekommenhed og
-                            produktivitet, der gør hende til en god samarbejdspartner."</em></p>
+                    <p>
+                        <em>"Noget der er kendetegnende i et projekt med Charlotte, er hendes evne til at være
+                            åbensindet
+                            for idéer og omstillingsparat i situationer, der kræver handling. <br><br>Hun er altid
+                            velmødt, forberedt og løsningsorienteret i stressede situationer.
+                            <br><br>Det er særligt hendes imødekommenhed og produktivitet, der gør hende til en god
+                            samarbejdspartner."</em>
+                    </p>
                 </section>
             </div>
         </section>

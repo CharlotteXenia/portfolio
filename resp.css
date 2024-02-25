@@ -22,6 +22,10 @@
         font-size: 2vh;
     }
 
+    p {
+        font-size: 1.75vh;
+    }
+
     /* header */
     header {
         width: 100%;
@@ -38,13 +42,19 @@
     }
 
     /* værktøjer */
+    #tools {
+        width: 100%;
+        align-items: center;
+    }
+
     #tools div {
-        width: 80%;
+        width: 70%;
         margin-bottom: 10vh;
+        align-items: center;
     }
 
     #tools div section {
-        width: 99% !important;
+        width: 90% !important;
         height: 45vh !important;
         margin-bottom: 2vh;
     }
@@ -55,6 +65,10 @@
         margin: 3vw !important;
     }
 
+    .uline {
+        margin-bottom: 0;
+    }
+
     #tools p {
         width: 80%;
         margin-top: -7vh;
@@ -62,6 +76,10 @@
 
     #ado {
         font-size: 3.5vw !important;
+    }
+
+    header img {
+        background-color: none;
     }
 }
 
@@ -182,6 +200,11 @@
     }
 
     /* tools */
+
+    #tools {
+        width: 100%;
+    }
+
     #tools div {
         flex-direction: column;
         margin-bottom: 7.5vh;
@@ -290,6 +313,8 @@
 }
 
 @media screen and (max-width:1450px) {
+
+
     #twirl {
         width: 23vw;
         margin-top: 26vh;
@@ -307,33 +332,45 @@
     }
 
     #tools div section {
-        width: 48%;
+        width: 100%;
         height: 50vh;
         margin-bottom: 2vh;
     }
 
     /* kontakt */
-    #contact_content {
+    #contact {
+        margin-bottom: 10vh;
+        margin-top: -10vh;
+    }
 
+    #contact_content {
+        width: 100%;
         flex-direction: column;
         margin: 0;
     }
 
     #contact_content div {
-
+        width: 100%;
     }
 
     #contact_content p {
         text-align: center;
         margin: 0 !important;
+        width: 100%;
     }
 
-    form {
-        display: none;
+    input,
+    textarea {
+        border-radius: 5px;
+        width: 95%;
+        font-size: 1.5vh;
     }
 
-    #eller {
-        display: none;
+    button {
+        font-weight: 400;
+        width: 95%;
+        height: 3.5vh;
+
     }
 
     #others div {
@@ -350,6 +387,19 @@
     #phone,
     #contEmail img {
         display: none;
+    }
+
+    #contEmail {
+        margin-bottom: -5vh;
+    }
+
+    #others p {
+        line-height: 3vh;
+        font-size: 2vh;
+    }
+
+    .proff {
+        font-size: 1.5vh !important;
     }
 
     /* curriculum */
@@ -435,3 +485,4 @@
             right: inherit;
         }
     }
+}
