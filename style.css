@@ -51,7 +51,7 @@
     text-align: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
 }
 
 #whoami h2 {
@@ -74,13 +74,14 @@
 }
 
 #whoami section:first-child img {
-    height: 60%;
+    /* height: 60%; */
+    width: 40%;
     border-radius: 0px 0px 0px 17px;
 }
 
 #whoami section:first-child p {
     text-align: left;
-    margin-left: 5vw;
+    margin-left: 2.5vw;
 }
 
 /**************************************************************************/
@@ -162,7 +163,7 @@
     width: 22vw;
     height: 60vh;
     border-radius: 17px;
-    margin-bottom: 10vh;
+    margin-bottom: 12.5vh;
     transition: transform 0.3s ease;
     /* Tilføjer en overgang for en glat effekt */
     box-shadow: 0 0 20px rgba(255, 255, 255, 0);
@@ -246,11 +247,11 @@
 .modCont {
     display: block;
     width: 70%;
-    height: 82vh;
+    height: 67vh;
     border-radius: 17px;
     padding: 2%;
     position: fixed;
-    top: 14vh;
+    top: 25vh;
     left: 15%;
     z-index: 10;
 }
@@ -324,6 +325,11 @@
     border-radius: 17px;
 }
 
+#mockAni {
+    width: 25vw;
+    border-radius: 17px;
+}
+
 /* STYLING AF SELVE PRIKKERNE */
 .prikker {
     display: flex;
@@ -354,7 +360,8 @@
 
 .portLink {
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 1vw;
+    font-style: italic;
 }
 
 /**************************************************************************/
@@ -401,19 +408,17 @@
     text-align: center;
 }
 
+
+
 .illuCont {
     margin-right: 5%;
 }
 
 #illustration1,
-#illustration2 {
+#illustration2,
+#illustration3 {
     width: 25vw;
     border-radius: 17px;
-}
-
-#illustration3 {
-    height: 30vh;
-    margin-right: 5vw;
 }
 
 #laes {

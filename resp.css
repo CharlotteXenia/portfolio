@@ -1,8 +1,10 @@
 @media screen and (max-width:450px) {
-
-
     h1 {
-        font-size: 8vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center !important;
+        font-size: 6vw;
     }
 
     h2 {
@@ -26,6 +28,13 @@
         font-size: 1.75vh;
     }
 
+    #programs h4,
+    #programs .text_border,
+    #tools h4,
+    #tools .text_border {
+        font-size: 5vw;
+    }
+
     /* header */
     header {
         width: 100%;
@@ -39,6 +48,11 @@
     .burger {
         width: 10%;
         margin-right: 10vw !important;
+    }
+
+    /* hvem er jeg */
+    #whoami h2 {
+        display: none;
     }
 
     /* værktøjer */
@@ -105,23 +119,11 @@
     }
 
     /* hvem er jeg */
-    .modCont {
-        display: block;
-        width: 70%;
-        height: 72vh;
-        border-radius: 17px;
-        padding: 2%;
-        z-index: 10;
-    }
+
 
     #whoami {
         margin-bottom: 10vh;
         margin-top: 1;
-    }
-
-    #whoami h2 {
-        margin-bottom: 1vh;
-        margin-top: -3vh;
     }
 
     #whoami section {
@@ -242,7 +244,8 @@
     }
 
     #others div section {
-        height: 70vh !important;
+        height: fit-content !important;
+        padding-bottom: 2.5vh;
     }
 
     .logoCont,
@@ -267,10 +270,10 @@
     }
 
     .modCont {
-        height: 80vh;
+        height: 85vh;
         justify-content: center !important;
         width: 80%;
-        top: 15vh;
+        top: 12vh;
         left: 9.5%;
     }
 
@@ -283,13 +286,17 @@
         margin-right: 0;
     }
 
+    .mockDesk {
+        width: 50%;
+    }
+
     .proces1,
     .proces2 {
         height: 15vh;
     }
 
     .proces3 {
-        width: 60vw;
+        width: 50vw;
         border-radius: 10px;
     }
 
@@ -312,16 +319,58 @@
     }
 }
 
+@media screen and (min-width:800px) and (max-width:1450px) {
+    #tools div section {
+        width: 100%;
+        height: 40vh !important;
+        margin-bottom: 2vh;
+    }
+
+    #tools div section img {
+        height: 15vh;
+        margin: 2vh;
+    }
+
+    #tools div section p {
+        margin-top: -7.5vh;
+    }
+
+    #whoami h2 {
+        font-size: 2vh;
+    }
+
+    #programs h4,
+    #programs .text_border,
+    #tools h4,
+    #tools .text_border {
+        font-size: 4vw;
+    }
+
+    #curriculum h2,
+    #pfcont h2 {
+        font-size: 5vh;
+    }
+
+    #others h2,
+    #contact h2 {
+        font-size: 4vh;
+    }
+
+    #curriculum h3,
+    #pfcont h3 {
+        font-size: 3vh;
+    }
+
+} 
+
 @media screen and (max-width:1450px) {
-
-
     #twirl {
         width: 23vw;
         margin-top: 26vh;
     }
 
     #others div section {
-        height: 95vh;
+        height: auto;
     }
 
     /* værktøjer */
@@ -380,7 +429,6 @@
 
     #others div section {
         width: 100%;
-        height: 50vh;
         margin-bottom: 2vh;
     }
 
@@ -402,87 +450,93 @@
         font-size: 1.5vh !important;
     }
 
-    /* curriculum */
-    @media(max-width:1000px) {
-        .timeline {
-            width: 100%;
-        }
+    .portLink {
+        font-size: 1.5vh;
     }
 
-    @media (max-width:767px) {
+}
 
-        /* cv */
-        #curriculum {
-            width: 60%;
-        }
+/* curriculum */
+@media(max-width:1000px) {
+    .timeline {
+        width: 100%;
+    }
+}
 
-        .timeline {
-            width: 100%;
-            padding-bottom: 0;
-        }
 
-        .respAlign {
-            justify-content: left;
-            text-align: left;
-            margin-bottom: 5vh;
-        }
+@media (max-width:767px) {
 
-        .timeline:before {
-            left: 20px;
-            height: 100%;
-        }
+    /* cv */
+    #curriculum {
+        width: 60%;
+    }
 
-        .timeline ul li:nth-child(odd),
-        .timeline ul li:nth-child(even) {
-            width: 100%;
-            text-align: left;
-            padding-left: 50px;
-            padding-bottom: 50px;
-        }
+    .timeline {
+        width: 100%;
+        padding-bottom: 0;
+    }
 
-        .timeline ul li:nth-child(odd):before,
-        .timeline ul li:nth-child(even):before {
-            top: -18px;
-            left: 16px;
-        }
+    .respAlign {
+        justify-content: left;
+        text-align: left;
+        margin-bottom: 5vh;
+    }
 
-        .timeline ul li:nth-child(odd) .time,
-        .timeline ul li:nth-child(even) .time {
-            top: -30px;
-            left: 50px;
-            right: inherit;
-        }
+    .timeline:before {
+        left: 20px;
+        height: 100%;
+    }
 
-        /* timeline2 */
-        .timeline2 {
-            width: 100%;
-            padding-bottom: 0;
-        }
+    .timeline ul li:nth-child(odd),
+    .timeline ul li:nth-child(even) {
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
 
-        .timeline2:before {
-            left: 20px;
-            height: 100%;
-        }
+    .timeline ul li:nth-child(odd):before,
+    .timeline ul li:nth-child(even):before {
+        top: -18px;
+        left: 16px;
+    }
 
-        .timeline2 ul li:nth-child(odd),
-        .timeline2 ul li:nth-child(even) {
-            width: 100%;
-            text-align: left;
-            padding-left: 50px;
-            padding-bottom: 50px;
-        }
+    .timeline ul li:nth-child(odd) .time,
+    .timeline ul li:nth-child(even) .time {
+        top: -30px;
+        left: 50px;
+        right: inherit;
+    }
 
-        .timeline2 ul li:nth-child(odd):before,
-        .timeline2 ul li:nth-child(even):before {
-            top: -18px;
-            left: 16px;
-        }
+    /* timeline2 */
+    .timeline2 {
+        width: 100%;
+        padding-bottom: 0;
+    }
 
-        .timeline2 ul li:nth-child(odd) .time,
-        .timeline2 ul li:nth-child(even) .time {
-            top: -30px;
-            left: 50px;
-            right: inherit;
-        }
+    .timeline2:before {
+        left: 20px;
+        height: 100%;
+    }
+
+    .timeline2 ul li:nth-child(odd),
+    .timeline2 ul li:nth-child(even) {
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    .timeline2 ul li:nth-child(odd):before,
+    .timeline2 ul li:nth-child(even):before {
+        top: -18px;
+        left: 16px;
+    }
+
+    .timeline2 ul li:nth-child(odd) .time,
+    .timeline2 ul li:nth-child(even) .time {
+        top: -30px;
+        left: 50px;
+        right: inherit;
     }
 }

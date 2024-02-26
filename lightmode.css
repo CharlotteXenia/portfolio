@@ -1,3 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=MuseoModerno:700|Mukta%20Vaani:400');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1fefd;
+    font-family: 'Mukta Vaani';
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+/** Farver **/
+/*
+--text: #022720;
+--background: #f1fefd;
+--primary: #175b82;
+--secondary: #f48ad1;
+--accent: #c7ef57;
+
+Border - #033028
+
+Gradients:
+min - #7FA810 + #7DC1E8
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'MuseoModerno';
+    font-weight: 700;
+    color: #022720;
+}
+
+h1 {
+    font-size: 2.5vw;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+h3 {
+    font-size: 2.5vw;
+}
+
+h4 {
+    font-size: 2vw;
+}
+
+h5 {
+    font-size: 2vh;
+}
+
+p,
+a,
+button {
+    font-size: 2vh;
+    color: #022720;
+}
+
+/**************************************************************************/
+/***** header *****/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #f1fefdcc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 15;
+}
+
+header img {
+    position: relative;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    width: 6%;
+    background-color: #f1fefd;;
+    z-index: 5;
+}
+
+nav {
+    width: 30%;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    /* Start med ingen bredde for understregning */
+    width: 0;
+    height: 2px;
+    /* Gradientfarve for understregning */
+    background-image: linear-gradient(to right, #750B51, #7DC1E8, #7FA810);
+    /* Tilføj en overgangseffekt */
+    transition: width 0.7s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+    /* Udvid understregningen til fuld bredde ved hover eller aktiv tilstand */
+    width: 100%;
+}
+
+header::after {
+    content: '';
+    /* Indholdet af pseudoelementet (i dette tilfælde, det er en border) */
+    position: absolute;
+    /* Positioner det absolut i forhold til headeren */
+    bottom: 0;
+    /* Placer det i bunden af headeren */
+    left: 3%;
+    /* Juster venstre position til at begynde fra 10% af headerens bredde */
+    width: 94%;
+    /* Bredden af pseudoelementet, 80% af headerens bredde */
+    border-bottom: 2px solid #033028;
+}
+
+.burger {
+    display: none;
+}
+
+#burgerMenu {
+    display: none;
+}
+/**************************************************************************/
+
+/******************************/
+/** INDSÆT BURGER??? **/
+/******************************/
+
+/**************************************************************************/
+/***** footer *****/
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    height: 7.5vh;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+footer div img {
+    margin-right: 15px;
+    height: 2.5vh;
+}
+
+footer p {
+    font-size: 0.75vw;
+}
+
+#foot_logo {
+    height: 6vh;
+    margin-top: 1vh;
+}
+
+footer::before {
+    /* <-- border */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 3%;
+    width: 94%;
+    border-top: 2px solid #033028;
+}
+
 /**************************************************************************/
 /***** overskrift *****/
 #heading {
@@ -20,14 +216,6 @@
     letter-spacing: 3.99px;
     transform: rotate(-7.728deg);
 } */
-
-/** gradient "min" **/
-/* giver gradient på ordet "min" i overskriften */
-.gradient-text_01 {
-    background-image: linear-gradient(to right, #7FA810, #7DC1E8);
-    background-clip: text;
-    color: transparent;
-}
 
 .solo_color {
     background-image: linear-gradient(to right, #7FA810, #7FA810);

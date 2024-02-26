@@ -583,7 +583,7 @@ const message = document.getElementById("message");
 function sendEmail() {
     const bodyMessage = `Navn: ${fullName.value}<br> 
     Email: ${email.value}<br> Emne: ${subject.value}<br> Besked: ${message.value}`;
-    
+
     Email.send({
         Host: "smtp.elasticemail.com",
         Username: "char.xenia@gmail.com",
@@ -593,7 +593,15 @@ function sendEmail() {
         Subject: subject.value,
         Body: bodyMessage
     }).then(
-        message => alert(message)
+        message => {
+            if (message == "OK") {
+                Swal.fire({
+                    title: "Succes!",
+                    text: "Din besked er blevet sendt!",
+                    icon: "success"
+                });
+            }
+        }
     );
 
     fullName.value = null;

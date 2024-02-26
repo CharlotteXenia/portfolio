@@ -7,9 +7,11 @@
     <title>Portfolio | Charlotte Xenia</title>
     <script src="script.js" defer></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="topfoot.css">
     <link rel="stylesheet" href="resp.css">
+    <link rel="icon" type="image/x-icon" href="media/fav.svg">
 </head>
 
 <body>
@@ -18,7 +20,7 @@
             alt="Logo for xeniadesigns. Logoet forstiller et v, et n og en tegnet gladiolus. Positioneringen af de tre elementer gør, at alle tre forbogstaver i Charlotte Xenia Nørgaard (CXN) er representeret.">
 
         <nav id="nav_links">
-            <a href="#whoamih2">Hvem er jeg?</a>
+            <a href="#heading">Hvem er jeg?</a>
             <a href="#pfcont">Portfolio</a>
             <a href="#curriculum">Curriculum Vitae</a>
             <a href="#contact">Kontakt</a>
@@ -29,7 +31,7 @@
 
     <main>
         <!-- Overskrift -->
-        <section id="heading">
+        <section id="heading" data-offset="150">
             <!-- <p>Velkommen til <span class="gradient-text_01">min</span></p>
             <h1>PORTFOLIO</h1> -->
             <h1>Charlotte Xenia Nørgaard</h1>
@@ -37,14 +39,33 @@
 
         <!-- Hvem er jeg -->
         <div id="whoami">
-            <section id="whoamih2" data-offset="150">
+            <section>
                 <h2>Multimediedesigner med passion for digital brugerindragelse</h2>
 
                 <div id="whoamiCont">
                     <img id="textWrap" src="media/02_portrait.png"
                         alt="Billedet forestiller en ung kvinde med fem softskills lavet i billedet.">
                     <p>
-                        ........
+                        Velkommen til mit univers, hvor kreativitet, empati, omsorg og nytænkning er fundamentet. Mit
+                        navn er Charlotte. Jeg er oprindeligt fra Nordvestjylland og har derfor fødder gravet dybt
+                        ned i den noget sandede jord, som findes på de kanter. Derudover er jeg 32 år og
+                        multimediedesigner.
+                        <br><br>
+                        Når det kommer til design, er jeg både detaljeorienteret og perfektionistisk. Hver pixel, farve
+                        og linje betyder noget for mig, fordi jeg tror på, at selv de små ting kan gøre den store
+                        forskel i et design. Med en passion for IT og mennesker går jeg altid efter at skabe løsninger,
+                        som ikke kun er visuelt tiltalende, men også funktionelle og engagerende.
+                        <br><br>
+                        Som kæreste til Alex på niende år og mor til vores skønne datter Enaya, er jeg også en mester i
+                        at jonglere med livets farverige bolde. Min omsorgsfulde og imødekommende natur gør mig til en
+                        lyttende og en hjælpsom teamspiller. Jeg elsker at samarbejde og dele ideer, fordi jeg tror på,
+                        at de bedste kreationer opstår, når vi inspirerer hinanden.
+                        <br><br>
+                        Jeg er desuden et selvstændigt og pålideligt væsen, der altid er klar på opgaverne - også gerne
+                        de lidt skæve af slagsen, og med en organiseret tilgang og et løsningsorienteret sind, er jeg i
+                        stand til at have gang i flere opgaver uden at mistet overblikket.
+                        <br><br>
+                        Så hvad siger du? Skal vi skabe fremtiden sammen?
                     </p>
                 </div>
             </section>
@@ -132,6 +153,9 @@
                                 JavaScript, som havde været semesterets fokus.
                                 <br><br>
                                 Mit primære ansvar var skitsering og tekstindhold på siden.
+                                <br><br>
+                                <a class="portLink" href="https://xeniadesigns.dk/besataflivet/" target="_blank">Besøg
+                                    sitet her!</a>
                             </p>
 
                             <div class="webLeft">
@@ -139,12 +163,11 @@
                                     alt="Gif-laptop-mockup af projektet Besat af livet, som formidler den oldegyptiske tro.">
                                 <img id="proj1Mock2" src="media/gif/moesmob.gif"
                                     alt="Gif-mobil-mockup af projektet Besat af livet, som formidler den oldegyptiske tro.">
-
                                 <div class="prikker"> <!-- prikker -->
                                     <span class="prikstil" id="proj1Prik1"></span>
                                     <span class="prikstil" id="proj1Prik2"></span>
                                 </div>
-                                <a class="portLink" href="https://xeniadesigns.dk/besataflivet/">Besøg sitet her!</a>
+
                             </div>
                         </div>
                     </div>
@@ -165,17 +188,19 @@
                                 er muligt at planlægge sit besøg i området. Den opgave var i midler tid for stor og uden
                                 for faglig kunne på det givne tidspunkt, og derfor blev det til en slags prototype, som
                                 der kan arbejdes videre i fremtiden.
+                                <br><br>
+                                <a class="portLink" href="https://xeniadesigns.dk/oplevthy/" target="_blank">Besøg sitet
+                                    her!</a>
                             <div class="webLeft">
                                 <img class="mockDesk" id="proj2Mock1" src="media/gif/oplevdesk.gif"
                                     alt="Gif-laptop-mockup af projektet Oplev Thy, som er et oplevelsessite for besøgsværdige steder i Thy.">
                                 <img class="mockPhone" id="proj2Mock2" src="media/gif/oplevmob.gif"
                                     alt="Gif-mobil-mockup af projektet Oplev Thy, som er et oplevelsessite for besøgsværdige steder i Thy.">
-
                                 <div class="prikker"><!-- prikker -->
                                     <span class="prikstil" id="proj2Prik1"></span>
                                     <span class="prikstil" id="proj2Prik2"></span>
                                 </div>
-                                <a class="portLink" href="https://xeniadesigns.dk/oplevthy/">Besøg sitet her!</a>
+
                             </div>
                         </div>
                     </div>
@@ -198,6 +223,9 @@
                                 elever.
                                 <br><br>
                                 Mine primære ansvarsområder var redesign af logo og tekstindhold.
+                                <br><br>
+                                <a class="portLink" href="https://xeniadesigns.dk/frontsession/" target="_blank">Besøg
+                                    sitet her!</a>
                             </p>
 
                             <div class="webLeft">
@@ -210,7 +238,6 @@
                                     <span class="prikstil" id="proj3Prik1"></span>
                                     <span class="prikstil" id="proj3Prik2"></span>
                                 </div>
-                                <a class="portLink" href="https://xeniadesigns.dk/frontsession/">Besøg sitet her!</a>
                             </div>
                         </div>
                     </div>
@@ -256,7 +283,7 @@
                                 Det første billede til højre er det færdige resultat.
                             </p>
 
-                            <div class="logoLeft">
+                            <div class="webLeft">
                                 <img class="proces1" id="logo1Proc1" src="media/processer/endelig.gif"
                                     alt="Det endelige resultat af et logodesig. Forestille et C, et N og en gladiolus-stilk, som sammen danner CXN.">
                                 <img class="proces1" id="logo1Proc2" src="media/processer/proces1.gif"
@@ -299,7 +326,7 @@
                                 Det første billede til højre, er det færdige resultat.
                             </p>
 
-                            <div class="logoLeft">
+                            <div class="webLeft">
                                 <img class="proces2" id="logo2Proc1" src="media/processer/thy_endelig.gif" alt="">
                                 <img class="proces2" id="logo2Proc2" src="media/processer/thy1.gif" alt="">
                                 <img class="proces2" id="logo2Proc3" src="media/processer/thy2.gif" alt="">
@@ -337,7 +364,7 @@
                                 Det færdige resultat er første billede i højre side og originalen nr. 2.
                             </p>
 
-                            <div class="logoLeft">
+                            <div class="webLeft">
                                 <img class="proces3" id="logo3Proc1" src="media/processer/front_endelig.gif"
                                     alt="Logo for dagshøjskolen Frontsession. Forestiller en højtaler i blå, grå og hvide farver med noder som skal illustere, at der kommer musik ud af den. Desuden er navnet Musikskolen Frontsession også implementeret.">
                                 <img class="proces3" id="logo3Proc2" src="media/processer/front_01.gif"
@@ -391,7 +418,7 @@
                                 Det kom der dette resultat ud af ->
                             </p>
 
-                            <div class="modalLeft">
+                            <div class="webLeft">
                                 <img id="illustration1" src="media/illustrationer/parallax.gif"
                                     alt="Illustration af en lufballon som svæver op på himlen, mens stjernerne kommer frem. Illustrationen er i forskellige nuancer af magenta.">
                             </div>
@@ -415,10 +442,11 @@
                                 jeg udvalgte dele, jeg kunne bruge. Efterfølgende blev de omfarvet og placeret i lag så
                                 billedet fik noget dybde.
                                 <br><br>
-                                <a href="https://xeniadesigns.dk/laesehjoernet/">Se den i brug her</a>
+                                <a href="https://xeniadesigns.dk/laesehjoernet/" target="_blank"><em>Se den i brug
+                                        her</em></a>
                             </p>
 
-                            <div class="modalLeft" id="laes">
+                            <div class="webLeft" id="laes">
                                 <img id="illustration2" src="media/illustrationer/baggrund4.jpg" alt="">
 
                             </div>
@@ -440,7 +468,7 @@
                                 Animationen er lavet med Figma, HTML, CSS og JavaScript.
                             </p>
 
-                            <div class="modalLeft">
+                            <div class="webLeft">
                                 <img id="illustration3" src="media/illustrationer/xeniadesigns.gif"
                                     alt="En animation af navnet XeniaDesigns skrevet med snirklede bogstaver med hvis outline på en mørkeblå baggrund.">
                             </div>
@@ -452,7 +480,7 @@
             </div>
         </div>
 
-        <!-- Værktøjer -->
+        <!-- Arbejdsområder -->
         <section id="tools">
             <h4>Mine <span class="text_border">arbejdsområder</span></h4>
 
@@ -542,7 +570,7 @@
                                     Jeg har fået mulighed for at kombinere kreativ tænkning med teknologisk og digital
                                     nysgerrighed, og jeg bliver hele tiden sulten efter mere.
                                     <br><br>
-                                    Multimediedesignuddannelsen har åbnet op for en verden, jeg havde glemt, men som jeg
+                                    Uddannelsen har åbnet op for en verden, jeg havde glemt, men som jeg
                                     er elsker og er enormt facineret af.
                                 </p>
                             </div>
@@ -677,7 +705,8 @@
                                 <p>Hjemme</p>
                                 <p>Det vildeste af alle jobs. Jobbet som mor.
                                     <br><br>
-                                    I september 2020 fik jeg min datter, Enaya, og hun er uden tvivl min størte bedrift.
+                                    I september 2020 fik jeg min datter, Enaya, og hun er uden tvivl min største
+                                    bedrift.
                                     Hun fuldender mig som menneske, og hun udfordre mig, så jeg hele tiden bliver mere
                                     tålmodig, mere lyttende og mere til stedet i nuet.
                                 </p>
@@ -840,7 +869,7 @@
             <a href=""><img src="media/18_linkedin.png" alt=""></a>
             <a href=""><img src="media/19_github.png" alt=""></a>
         </div>
-        <p>Copyright x 2024</p>
+        <p>All rights reserved // Charlotte Xenia Nørgaard 2024</p>
         <!-- Logo -->
         <a href="#heading"><img id="foot_logo" src="media/01_logo.svg"
                 alt="Logo for xeniadesigns. Logoet forstiller et v, et n og en tegnet gladiolus. Positioneringen af de tre elementer gør, at alle tre forbogstaver i Charlotte Xenia Nørgaard (CXN) er representeret."></a>
