@@ -19,6 +19,23 @@ main {
     align-items: center;
     width: 100%;
     position: relative;
+    transition-timing-function: ease-in-out;
+    transition: 2s;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #010E0D;
+}
+
+/* Farve på thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #7DC1E8;
+    border-radius: 7.5px;
+
 }
 
 /** Farver **/
@@ -51,7 +68,11 @@ h5 {
 
 h1 {
     font-size: 2.5vw;
+    line-height: 5vh;
+    letter-spacing: 1.5vw;
+    margin-left: 18px;
 }
+
 
 h2 {
     font-size: 3vw;
@@ -78,7 +99,30 @@ button {
     text-decoration: none;
 }
 
+
+
 /**************************************************************************/
+/***** Animation *****/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+header,
+main,
+footer {
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
 /***** header *****/
 header {
     position: fixed;
@@ -148,20 +192,6 @@ header::after {
     border-bottom: 2px solid #033028;
 }
 
-.burger {
-    display: none;
-}
-
-#burgerMenu {
-    display: none;
-}
-/**************************************************************************/
-
-/******************************/
-/** INDSÆT BURGER??? **/
-/******************************/
-
-/**************************************************************************/
 /***** footer *****/
 
 footer {

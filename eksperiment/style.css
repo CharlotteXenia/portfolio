@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=MuseoModerno:700|Mukta%20Vaani:400');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #010E0D;
+    display: flex;
+    justify-content: center;
+}
+
+.splash {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 14vw 17vh 6vw;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#kolonne_01,
+#kolonne_02,
+#kolonne_03 {
+    display: flex;
+}
+
+.box1-2 {
+    display: flex;
+    justify-content: right;
+    margin-top: 62.5px;
+}
+
+.box9-10 {
+    display: flex;
+    margin-bottom: 108.5px;
+}
+
+
+/* bokse */
+#box_01,
+#box_02,
+#box_03,
+#box_04,
+#box_05,
+#box_06,
+#box_07,
+#box_08,
+#box_09,
+#box_10,
+#box_11,
+#box_12 {
+    border-radius: 17px;
+}
+
+#box_01 h2 {
+    text-align: right;
+    font-family: 'MuseoModerno';
+    color: #D8FDF6;
+    font-size: 1.25vw;
+    letter-spacing: 0.75vw;
+    line-height: 3.75vh;
+}
+
+#box_01 {
+    margin: 0px 10px 10px 10px;
+}
+
+#box_02 {
+    width: 40.64px;
+    height: 102.39px;
+    background: linear-gradient(-45deg, #7FA810, #7FA81080);
+    margin: 0px 10px 0px 10px;
+}
+
+#box_03 {
+    width: 163.99px;
+    height: 286.8px;
+    background: linear-gradient(0deg, #0F3D57, #0F3D5733);
+    margin: 0px 10px 20px 10px;
+}
+
+#box_04 {
+    width: 41px;
+    height: 41px;
+    background: linear-gradient(45deg, #F05CBE, #F05CBE33);
+    margin: 0px 10px 20px 10px;
+}
+
+#box_05 {
+    width: 313.01px;
+    height: 163.99px;
+    background: linear-gradient(45deg, #7DC1E8, #7DC1E833);
+    margin: 0px 10px 20px 10px;
+}
+
+#box_06 {
+    width: 387.91px;
+    height: 163.99px;
+    background: linear-gradient(-45deg, #BD007E, #BD007E33);
+    margin: 10px 10px 20px 10px;
+}
+
+#box_07 {
+    width: 163.99px;
+    height: 163.99px;
+    background-color: #1B6A98;
+    margin: 0px 10px 20px 10px;
+}
+
+#box_08 {
+    width: 82px;
+    height: 82px;
+    background: linear-gradient(90deg, #11EEDC, #11EEDCcc);
+    margin: 10px 10px 10px 10px;
+}
+
+#box_09 {
+    width: 31.35px;
+    height: 63.5px;
+    background: linear-gradient(135deg, #990F6A, #990F6A80);
+    margin: 10px 10px 10px 10px;
+}
+
+#box_10 {
+    width: 29.95px;
+    height: 29.95px;
+    background: linear-gradient(135deg, #7FA810, #7FA81080);
+    margin: 10px 10px 10px 10px;
+}
+
+#box_11 {
+    width: 41px;
+    height: 41px;
+    background: linear-gradient(-105deg, #50C5B0, #50C5B080);
+    margin: 10px 10px 0px 356.5px;
+}
+
+#box_12 {
+    width: 163.99px;
+    height: 163.99px;
+    background: linear-gradient(180deg, #9FD214, #9FD21475);
+    margin: 0px 10px 0px 10px;
+}
+
+@media screen and (max-width:450px) {
+    .splash {
+        padding: 25vh 11vw 17vh 9vw;
+    }
+
+    #box_01,
+    #box_02,
+    #box_03,
+    #box_04,
+    #box_05,
+    #box_06,
+    #box_07,
+    #box_08,
+    #box_09,
+    #box_10,
+    #box_11,
+    #box_12 {
+        border-radius: 7.5px;
+    }
+
+    #box_01 h2 {
+        font-size: 2vw;
+        line-height: 1.5vh;
+    }
+
+    #box_01 {
+        margin: 10px 0px 5px 5px;
+    }
+
+    #box_02 {
+        width: 15px;
+        height: 39px;
+        background: linear-gradient(-45deg, #7FA810, #7FA81080);
+        margin: 5px 0px 5px 5px;
+    }
+
+    #box_03 {
+        width: 64px;
+        height: 112px;
+        background: linear-gradient(0deg, #0F3D57, #0F3D5733);
+        margin: 5px 5px 5px 5px;
+    }
+
+    #box_04 {
+        width: 16px;
+        height: 16px;
+        background: linear-gradient(45deg, #F05CBE, #F05CBE33);
+        margin: 70px 5px 5px 0px;
+    }
+
+    #box_05 {
+        width: 122px;
+        height: 64px;
+        background: linear-gradient(45deg, #7DC1E8, #7DC1E833);
+        margin: 5px 5px 5px 0px;
+    }
+
+    #box_06 {
+        width: 143px;
+        height: 64px;
+        background: linear-gradient(-45deg, #BD007E, #BD007E33);
+        margin: 5px 0px 5px 5px;
+    }
+
+    #box_07 {
+        width: 64px;
+        height: 64px;
+        background-color: #1B6A98;
+        margin: 5px 5px 5px 5px;
+    }
+
+    #box_08 {
+        width: 27px;
+        height: 27px;
+        background: linear-gradient(90deg, #11EEDC, #11EEDCcc);
+        margin: 5px 5px 5px 0px;
+    }
+
+    #box_09 {
+        width: 10px;
+        height: 27px;
+        background: linear-gradient(135deg, #990F6A, #990F6A80);
+        margin: 5px 5px 5px 0px;
+    }
+
+    #box_10 {
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(135deg, #7FA810, #7FA81080);
+        margin: 5px 5px 5px 0px;
+    }
+
+    #box_11 {
+        width: 15px;
+        height: 15px;
+        background: linear-gradient(-105deg, #50C5B0, #50C5B080);
+        margin: 5px 0px 45px 130px;
+    }
+
+    #box_12 {
+        width: 64px;
+        height: 64px;
+        background: linear-gradient(180deg, #9FD214, #9FD21475);
+        margin: 5px 5px 5px 5px;
+    }
+}
+
+
+@media screen and (max-width:1080px) and (min-width:450px) {
+    .splash {
+        padding: 22vh 17vw 17vh 3vw;
+    }
+
+    #box_01 h2 {
+        line-height: 1.75vh;
+    }
+
+    #box_01 {
+        margin: 5px 10px 0px 10px;
+    }
+
+    #box_02 {
+        width: 30.64px;
+        height: 60.39px;
+        background: linear-gradient(-45deg, #7FA810, #7FA81080);
+        margin: 0px 5px 0px 5px;
+    }
+
+    #box_03 {
+        width: 123.99px;
+        height: 226.8px;
+        background: linear-gradient(0deg, #0F3D57, #0F3D5733);
+        margin: 0px 5px 10px 5px;
+    }
+
+    #box_04 {
+        width: 41px;
+        height: 41px;
+        background: linear-gradient(45deg, #F05CBE, #F05CBE33);
+        margin: 70px 5px 10px 5px;
+    }
+
+    #box_05 {
+        width: 255.01px;
+        height: 123.99px;
+        background: linear-gradient(45deg, #7DC1E8, #7DC1E833);
+        margin: 10px 5px 10px 5px;
+    }
+
+    #box_06 {
+        width: 287.91px;
+        height: 123.99px;
+        background: linear-gradient(-45deg, #BD007E, #BD007E33);
+        margin: 10px 0px 10px 112.5px;
+    }
+
+    #box_07 {
+        width: 123.99px;
+        height: 123.99px;
+        background-color: #1B6A98;
+        margin: 0px 5px 10px 5px;
+    }
+
+    #box_08 {
+        width: 52px;
+        height: 52px;
+        background: linear-gradient(90deg, #11EEDC, #11EEDCcc);
+        margin: 5px 5px 5px 5px;
+    }
+
+    #box_09 {
+        width: 21.35px;
+        height: 52.5px;
+        background: linear-gradient(135deg, #990F6A, #990F6A80);
+        margin: 10px 2.5px 55px 10px;
+    }
+
+    #box_10 {
+        width: 19.95px;
+        height: 19.95px;
+        background: linear-gradient(135deg, #7FA810, #7FA81080);
+        margin: 5px 2.5px 5px 4px;
+    }
+
+    #box_11 {
+        width: 41px;
+        height: 41px;
+        background: linear-gradient(-105deg, #50C5B0, #50C5B080);
+        margin: 5px 5px 0px 356.5px;
+    }
+
+    #box_12 {
+        width: 123.99px;
+        height: 123.99px;
+        background: linear-gradient(180deg, #9FD214, #9FD21475);
+        margin: 0px 5px 0px 5px;
+    }
+
+    .box1-2 {
+        display: flex;
+        justify-content: right;
+        margin-top: 83px;
+    }
+
+}

@@ -28,10 +28,10 @@
         font-size: 1.75vh;
     }
 
-    #programs h4,
-    #programs .text_border,
-    #tools h4,
-    #tools .text_border {
+    .programs h4,
+    .programs .text_border,
+    .tools h4,
+    .tools .text_border {
         font-size: 5vw;
     }
 
@@ -56,24 +56,24 @@
     }
 
     /* værktøjer */
-    #tools {
+    .tools {
         width: 100%;
         align-items: center;
     }
 
-    #tools div {
+    .tools div {
         width: 70%;
         margin-bottom: 10vh;
         align-items: center;
     }
 
-    #tools div section {
+    .tools div section {
         width: 90% !important;
         height: 45vh !important;
         margin-bottom: 2vh;
     }
 
-    #tools img {
+    .tools img {
         height: 10vh !important;
         width: auto;
         margin: 3vw !important;
@@ -83,7 +83,7 @@
         margin-bottom: 0;
     }
 
-    #tools p {
+    .tools p {
         width: 80%;
         margin-top: -7vh;
     }
@@ -95,6 +95,12 @@
     header img {
         background-color: none;
     }
+
+    #contact h2,
+    .text_border {
+        font-size: 5vw !important;
+    }
+
 }
 
 @media screen and (max-width:1080px) {
@@ -185,8 +191,8 @@
         margin-bottom: 7.5vh;
     }
 
-    #pfcont div section {
-        width: 100%;
+    #pfcont div div {
+        width: 100% !important;
         height: 30vh;
         margin-bottom: 2vh;
     }
@@ -203,43 +209,43 @@
 
     /* tools */
 
-    #tools {
+    .tools {
         width: 100%;
     }
 
-    #tools div {
+    .tools div {
         flex-direction: column;
         margin-bottom: 7.5vh;
         width: 100%;
     }
 
-    #tools div section {
+    .tools div section {
         width: 100%;
         height: 30vh;
         margin-bottom: 2vh;
     }
 
-    #tools h3 {
+    .tools h3 {
         margin-top: -1vh;
         margin-bottom: 1vh;
     }
 
-    #tools img {
+    .tools img {
         margin-top: -0.5vh;
         height: 17vh;
     }
 
     /* programs */
-    #programs div {
+    .programs div {
         flex-direction: column;
     }
 
-    #programs div section:last-child,
-    #programs div section:first-child {
+    .programs div section:last-child,
+    .programs div section:first-child {
         width: 100%;
     }
 
-    #programs img {
+    .programs img {
         margin-right: 5vw;
     }
 
@@ -320,18 +326,26 @@
 }
 
 @media screen and (min-width:800px) and (max-width:1450px) {
-    #tools div section {
+    #whoami section:first-child {
+        width: 80%;
+    }
+
+    #whoamiCont {
+        width: 100%;
+    }
+
+    .tools div section {
         width: 100%;
         height: 40vh !important;
         margin-bottom: 2vh;
     }
 
-    #tools div section img {
+    .tools div section img {
         height: 15vh;
         margin: 2vh;
     }
 
-    #tools div section p {
+    .tools div section p {
         margin-top: -7.5vh;
     }
 
@@ -339,10 +353,10 @@
         font-size: 2vh;
     }
 
-    #programs h4,
-    #programs .text_border,
-    #tools h4,
-    #tools .text_border {
+    .programs h4,
+    .programs .text_border,
+    .tools h4,
+    .tools .text_border {
         font-size: 4vw;
     }
 
@@ -351,6 +365,7 @@
         font-size: 5vh;
     }
 
+    #contact .text_border,
     #others h2,
     #contact h2 {
         font-size: 4vh;
@@ -361,7 +376,23 @@
         font-size: 3vh;
     }
 
-} 
+    .projCont div,
+    .logoCont div {
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width:1300px) and (max-width:1450px) {
+    #whoami section:first-child {
+        width: 75%;
+    }
+
+    .webLeft {
+        width: 50%;
+    }
+}
+
 
 @media screen and (max-width:1450px) {
     #twirl {
@@ -374,13 +405,13 @@
     }
 
     /* værktøjer */
-    #tools div {
+    .tools div {
         width: 80%;
         flex-wrap: wrap;
         margin-bottom: 10vh;
     }
 
-    #tools div section {
+    .tools div section {
         width: 100%;
         height: 50vh;
         margin-bottom: 2vh;
@@ -438,7 +469,7 @@
     }
 
     #contEmail {
-        margin-bottom: -5vh;
+        margin-bottom: 2vh;
     }
 
     #others p {

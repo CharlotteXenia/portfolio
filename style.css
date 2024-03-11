@@ -9,39 +9,6 @@
     flex-shrink: 0;
 }
 
-/* #heading p {
-    position: absolute;
-    font-size: 2vh;
-    font-weight: 700;
-
-    margin-top: -30px;
-    margin-left: -35vw;
-
-    letter-spacing: 3.99px;
-    transform: rotate(-7.728deg);
-} */
-
-/** gradient "min" **/
-/* giver gradient på ordet "min" i overskriften */
-.gradient-text_01 {
-    background-image: linear-gradient(to right, #7FA810, #7DC1E8);
-    background-clip: text;
-    color: transparent;
-}
-
-.solo_color {
-    background-image: linear-gradient(to right, #7FA810, #7FA810);
-    background-clip: text;
-    color: transparent;
-}
-
-#heading h1 {
-    text-align: right;
-    line-height: 5vh;
-    letter-spacing: 1.5vw;
-    margin-left: 18px;
-}
-
 /**************************************************************************/
 /***** hvem er jeg *****/
 #whoami {
@@ -155,12 +122,13 @@
     width: 70%;
 }
 
-#pfcont div section {
+#pfcont div div {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 22vw;
+    /* width: 22vw; */
+    width: 31.5%;
     height: 60vh;
     border-radius: 17px;
     margin-bottom: 12.5vh;
@@ -171,32 +139,32 @@
     z-index: 1;
 }
 
-#pfcont div section:first-child {
+#pfcont div div:first-child {
     background-color: #5c0a4085;
 }
 
-#pfcont div section:first-child:hover {
+#pfcont div div:first-child:hover {
     box-shadow: 0 0 30px rgba(146, 59, 117, 0.7);
     /* Tilføj en baggrunds-glød ved hover */
 }
 
-#pfcont div section:nth-child(2) {
+#pfcont div div:nth-child(2) {
     background-color: #0f395285;
 }
 
-#pfcont div section:nth-child(2):hover {
+#pfcont div div:nth-child(2):hover {
     box-shadow: 0 0 20px rgba(28, 103, 146, 0.7);
 }
 
-#pfcont div section:nth-child(3) {
+#pfcont div div:nth-child(3) {
     background-color: #05504a85;
 }
 
-#pfcont div section:nth-child(3):hover {
+#pfcont div div:nth-child(3):hover {
     box-shadow: 0 0 20px rgba(8, 116, 107, 0.7);
 }
 
-#pfcont div section:hover {
+#pfcont div div:hover {
     transform: scale(1.05);
     /* Skaler sektionen en smule større ved hover */
 }
@@ -240,7 +208,8 @@
     top: 0;
 }
 
-.projCont div {
+.projCont div,
+.logoCont div {
     margin: auto;
 }
 
@@ -312,7 +281,11 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    top: 0;
+    top: 0 !important;
+}
+
+.logoCont .webLeft{
+    margin: auto;
 }
 
 .mockDesk {
@@ -435,7 +408,7 @@
 
 /**************************************************************************/
 /***** Værktøjer *****/
-#tools {
+.tools {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -444,17 +417,17 @@
     width: 100%;
 }
 
-#tools h4 {
+.tools h4 {
     margin-bottom: 4vh;
 }
 
-#tools div {
+.tools div {
     display: flex;
     justify-content: space-around;
     width: 70%;
 }
 
-#tools div section {
+.tools div section {
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -466,36 +439,36 @@
     text-align: justify;
 }
 
-#tools img {
+.tools img {
     height: 10vh;
     width: auto;
     margin: 1vw;
 }
 
-#tools p {
+.tools p {
     width: 80%;
     margin-top: 2vh;
     line-height: 2.5vh;
 }
 
-#tools div section:first-child {
+.tools div section:first-child {
     background-color: #7FA810;
 }
 
-#tools div section:nth-child(2) {
+.tools div section:nth-child(2) {
     background-color: #750B51;
 }
 
-#tools div section:nth-child(3) {
+.tools div section:nth-child(3) {
     background-color: #D8FDF6;
     color: #010E0D;
 }
 
-#tools div section:nth-child(3) p {
+.tools div section:nth-child(3) p {
     color: #010E0D;
 }
 
-#tools div section:nth-child(4) {
+.tools div section:nth-child(4) {
     background-color: #7dc1e8ce;
 }
 
@@ -507,7 +480,7 @@
 
 /**************************************************************************/
 /***** programmer *****/
-#programs {
+.programs {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -517,26 +490,26 @@
     margin-bottom: 20vh;
 }
 
-#programs h4 {
+.programs h4 {
     margin-bottom: 4vh;
 }
 
-#programs p {
+.programs p {
     font-size: 2.5vh;
 }
 
-#programs div {
+.programs div {
     display: flex;
     justify-content: space-around;
     width: 70%;
 }
 
-#programs img {
+.programs img {
     height: 4.5vh;
     margin-right: 20px;
 }
 
-#programs div section {
+.programs div section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -546,17 +519,17 @@
     margin-bottom: 3vh;
 }
 
-#programs div section:first-child {
+.programs div section:first-child {
     width: 64%;
     background-color: #0f395285;
 }
 
-#programs div section:last-child {
+.programs div section:last-child {
     width: 33%;
     background-color: #5c0a4085;
 }
 
-#programs section {
+.programs section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -820,15 +793,19 @@
     margin-bottom: 4vh;
 }
 
+#contact .text_border {
+    font-size: 6vh;
+}
+
 #contact p {
     text-align: left;
     width: 80%;
 }
 
 #contact img {
-    height: 3vh;
+    height: 2vh;
     margin-right: 2vh;
-    margin-top: 0.7vh;
+    margin-top: 0.2vh;
 }
 
 #contact_content {
@@ -846,10 +823,6 @@
 #contact div div div {
     display: flex;
     justify-content: left;
-}
-
-#eller {
-    margin-left: 2.5vw;
 }
 
 /**************************************************************************/
@@ -910,11 +883,10 @@ button:hover {
 
 /** linje **/
 #twirl {
-    height: 32vh;
-    /* width: 22vw; */
+    height: 30vh;
     position: absolute;
-    margin-top: 28vh;
-    margin-right: 21vw;
+    margin-top: 11vh;
+    margin-right: 18vw;
 }
 
 path {
